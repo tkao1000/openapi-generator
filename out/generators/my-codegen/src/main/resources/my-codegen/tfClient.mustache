@@ -1,0 +1,119 @@
+package sumologic
+
+import (
+    "encoding/json"
+    "fmt"
+{{#imports}}
+    "{{import}}"
+{{/imports}}
+)
+
+// operations
+{{#apiInfo}}
+{{#apis}}
+{{#operations}}
+{{#operation}}
+{{#vendorExtensions.x-tf-create}}
+// {{nickname}}
+//func (s *Client) {{nickname}}({{#allParams}}{{#required}}{{paramName}} {{{dataType}}}{{#hasMore}}, {{/hasMore}}{{/required}}{{/allParams}}) ({{#returnType}}{{{returnType}}}, {{/returnType}}*http.Response, error) {
+//}
+
+func (s *Client) Get{{returnType}}(id string) (*{{returnType}}, error) {
+   data, _, err := s.Get(fmt.printf("{{path}}/%s", id))
+   if err != nil {
+       return nil, err
+   }
+   if data == nil {
+       return nil, nil
+   }
+
+   var {{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}} {{{returnType}}}
+   err = json.Unmarshal(data, &{{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}})
+   if err != nil {
+       return nil, err
+   }
+   return &{{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}}, nil
+}
+
+func (s *Client) Delete{{returnType}}(id string) error {
+    _, err := s.Delete(fmt.Sprintf("{{path}}/%s", id))
+    return err
+}
+
+func (s *Client) Create{{returnType}}({{#lambda.camelcase}}{{returnType}}{{/lambda.camelcase}} {{returnType}}) (string, error) {
+    data, err := s.Post("{{path}}", {{#lambda.camelcase}}{{returnType}}{{/lambda.camelcase}})
+    if err != nil {
+        return "", err
+    }
+
+    var {{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}} {{{returnType}}}
+    err = json.Unmarshal(data, &{{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}})
+    if err != nil {
+        return "", err
+    }
+
+    return {{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}}.id, nil
+}
+
+func (s *Client) Update{{returnType}}({{#lambda.camelcase}}{{returnType}}{{/lambda.camelcase}} {{returnType}}) error {
+    url := fmt.Sprintf("{{path}}/%s", {{#lambda.camelcase}}{{returnType}}{{/lambda.camelcase}}.id)
+{{/vendorExtensions.x-tf-create}}
+{{/operation}}
+{{/operations}}
+{{/apis}}
+{{/apiInfo}}
+
+{{#models}}
+{{#model}}
+{{#vendorExtensions.x-tf-resource}}
+    // TODO: How to identify readonly and writeonly fields
+    {{#vars}}
+    {{#vendorExtensions.x-tf-resource-writeonly}}
+    {{#lambda.camelcase}}{{classname}}{{/lambda.camelcase}}.{{baseName}} = ""
+    {{/vendorExtensions.x-tf-resource-writeonly}}
+    {{/vars}}
+{{/vendorExtensions.x-tf-resource}}
+{{/model}}
+{{/models}}
+
+{{#apiInfo}}
+{{#apis}}
+{{#operations}}
+{{#operation}}
+{{#vendorExtensions.x-tf-create}}
+    _, err := s.Put(url, {{#lambda.camelcase}}{{returnType}}{{/lambda.camelcase}})
+    return err
+}
+{{/vendorExtensions.x-tf-create}}
+{{/operation}}
+{{/operations}}
+{{/apis}}
+{{/apiInfo}}
+
+// models
+{{#models}}
+{{#model}}
+{{#vendorExtensions.x-tf-resource}}
+  {{#apiInfo}}
+    {{#apis}}
+      {{#operations}}
+        {{#operation}}
+          {{#vendorExtensions.x-tf-create}}
+type {{returnType}} struct {
+          {{/vendorExtensions.x-tf-create}}
+        {{/operation}}
+      {{/operations}}
+    {{/apis}}
+  {{/apiInfo}}
+{{#vars}}
+  {{^vendorExtensions.x-tf-resource-readonly}}
+    {{#description}}
+    // {{{description}}}
+    {{/description}}
+    {{nameInCamelCase}} {{^isEnum}}{{^isPrimitiveType}}{{^isContainer}}{{^isDateTime}}*{{/isDateTime}}{{/isContainer}}{{/isPrimitiveType}}{{/isEnum}} {{dataType}}{{#isListContainer}}{{items.dataType}}{{/isListContainer}}{{#isMapContainer}}{{items.dataType}}{{/isMapContainer}} `json:"{{baseName}}{{^required}},omitempty{{/required}}"{{#withXml}} xml:"{{baseName}}"{{/withXml}}`
+  {{/vendorExtensions.x-tf-resource-readonly}}
+  {{/vars}}
+}
+{{/vendorExtensions.x-tf-resource}}
+{{/model}}
+{{/models}}

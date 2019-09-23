@@ -1,0 +1,6 @@
+org/openapitools/codegen/config/WorkflowSettingsTest.class
+org/openapitools/codegen/validation/GenericValidatorTest.class
+org/openapitools/codegen/validation/ValidationRuleTest$Sample.class
+org/openapitools/codegen/validation/ValidatedTest.class
+org/openapitools/codegen/validation/ValidationRuleTest.class
+org/openapitools/codegen/validation/GenericValidatorTest$Person.class

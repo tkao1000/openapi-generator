@@ -1,0 +1,7 @@
+package 
+
+// ---------- TYPES ----------
+    type Folder_allOf struct {
+      description string `json:"description"`
+      children array `json:"children"`
+    }

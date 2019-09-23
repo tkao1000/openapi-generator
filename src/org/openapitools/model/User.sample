@@ -1,0 +1,17 @@
+package 
+
+// ---------- TYPES ----------
+    type User struct {
+      firstName string `json:"firstName"`
+      lastName string `json:"lastName"`
+      email string `json:"email"`
+      roleIds array `json:"roleIds"`
+      createdAt DateTime `json:"createdAt"`
+      createdBy string `json:"createdBy"`
+      modifiedAt DateTime `json:"modifiedAt"`
+      modifiedBy string `json:"modifiedBy"`
+      id string `json:"id"`
+      isActive boolean `json:"isActive"`
+      isLocked boolean `json:"isLocked"`
+      lastLoginTimestamp DateTime `json:"lastLoginTimestamp"`
+    }

@@ -1,0 +1,420 @@
+package sumologic
+
+import (
+	"fmt"
+	"strings"
+	"testing"
+
+	"github.com/hashicorp/terraform/helper/resource"
+	"github.com/hashicorp/terraform/terraform"
+{{#imports}}
+  "{{import}}"
+{{/imports}}
+)
+{{#apiInfo}}
+  {{#apis}}
+{{#operations}}
+  {{#operation}}
+    {{#vendorExtensions.x-tf-create}}
+func TestAccSumologic{{returnType}}Minimal(t *testing.T) {
+	var {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} *{{returnType}}
+	resourceName := "sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.test"
+	resource.Test(t, resource.TestCase{
+		Providers:    testAccProviders,
+		CheckDestroy: testAccCheck{{returnType}}Destroy,
+		Steps: []resource.TestStep{
+			{
+				Config: testAccSumologic{{returnType}}ConfigMinimal,
+				Check: resource.ComposeTestCheckFunc(
+					testAccCheck{{returnType}}Exists(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}, t),
+					testAccCheck{{returnType}}Attributes(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}),
+					resource.TestCheckResourceAttrSet(resourceName, "id"),
+          {{#models}}
+            {{#model}}
+              {{#vendorExtensions.x-tf-resource}}
+          {{#vars}}
+            {{^vendorExtensions.x-tf-resource-readonly}}
+            resource.TestCheckResourceAttr(resourceName, "{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}{{#isListContainer}}.#{{/isListContainer}}", ""),
+            {{/vendorExtensions.x-tf-resource-readonly}}
+          {{/vars}}
+          {{/vendorExtensions.x-tf-resource}}
+            {{/model}}
+            {{/models}}
+				),
+			},
+			{
+				ResourceName:            resourceName,
+				ImportState:             true,
+				ImportStateVerify:       true,
+				ImportStateVerifyIgnore: []string{"lookup_by_name", "destroy"},
+			},
+		},
+	})
+}
+
+func TestAccSumologic{{returnType}}Simple(t *testing.T) {
+	var {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} *{{returnType}}
+	resourceName := "sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.test"
+	resource.Test(t, resource.TestCase{
+		Providers:    testAccProviders,
+		CheckDestroy: testAccCheck{{returnType}}Destroy,
+		Steps: []resource.TestStep{
+			{
+				Config: testAccSumologic{{returnType}}Config,
+				Check: resource.ComposeTestCheckFunc(
+					testAccCheck{{returnType}}Exists(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}, t),
+					testAccCheck{{returnType}}Attributes(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}),
+					resource.TestCheckResourceAttrSet(resourceName, "id"),
+{{#models}}
+  {{#model}}
+    {{#vendorExtensions.x-tf-resource}}
+      {{#vars}}
+        {{^vendorExtensions.x-tf-resource-readonly}}
+          resource.TestCheckResourceAttr(resourceName, "{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}{{#isListContainer}}.#{{/isListContainer}}", ""),
+        {{/vendorExtensions.x-tf-resource-readonly}}
+      {{/vars}}
+    {{/vendorExtensions.x-tf-resource}}
+  {{/model}}
+{{/models}}
+				),
+			},
+			{
+				ResourceName:            resourceName,
+				ImportState:             true,
+				ImportStateVerify:       true,
+				ImportStateVerifyIgnore: []string{"lookup_by_name", "destroy"},
+			},
+		},
+	})
+}
+
+func TestAccSumologic{{returnType}}LookupByName(t *testing.T) {
+	var {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} *{{returnType}}
+	resourceName := "sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.test"
+	resource.Test(t, resource.TestCase{
+		Providers:    testAccProviders,
+		CheckDestroy: testAccCheck{{returnType}}Destroy,
+		// TODO: if we keep lookup_by_name, we need to beef up the tests and have 2 steps
+		// TODO: first step creates the resource
+		// TODO: second step looks it up by name
+		Steps: []resource.TestStep{
+			{
+				Config: testAccSumologic{{returnType}}ConfigLookupByName,
+				Check: resource.ComposeTestCheckFunc(
+					testAccCheck{{returnType}}Exists(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}, t),
+					testAccCheck{{returnType}}Attributes(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}),
+					resource.TestCheckResourceAttrSet(resourceName, "id"),
+				),
+			},
+			{
+				ResourceName:            resourceName,
+				ImportState:             true,
+				ImportStateVerify:       true,
+				ImportStateVerifyIgnore: []string{"lookup_by_name", "destroy"},
+			},
+		},
+	})
+}
+
+func TestAccSumologic{{returnType}}AllConfig(t *testing.T) {
+	var {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} *{{returnType}}
+	resourceName := "sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.test"
+	resource.Test(t, resource.TestCase{
+		Providers:    testAccProviders,
+		CheckDestroy: testAccCheck{{returnType}}Destroy,
+		Steps: []resource.TestStep{
+			{
+				Config: testAccSumologic{{returnType}}ConfigAll,
+				Check: resource.ComposeTestCheckFunc(
+					testAccCheck{{returnType}}Exists(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}, t),
+					testAccCheck{{returnType}}Attributes(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}),
+					resource.TestCheckResourceAttrSet(resourceName, "id"),
+{{#models}}
+  {{#model}}
+    {{#vendorExtensions.x-tf-resource}}
+      {{#vars}}
+        {{^vendorExtensions.x-tf-resource-readonly}}
+          resource.TestCheckResourceAttr(resourceName, "{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}{{#isListContainer}}.#{{/isListContainer}}", ""),
+        {{/vendorExtensions.x-tf-resource-readonly}}
+      {{/vars}}
+    {{/vendorExtensions.x-tf-resource}}
+  {{/model}}
+{{/models}}
+				),
+			},
+			{
+				ResourceName:            resourceName,
+				ImportState:             true,
+				ImportStateVerify:       true,
+				ImportStateVerifyIgnore: []string{"lookup_by_name", "destroy"},
+			},
+		},
+	})
+}
+
+func TestAccSumologic{{returnType}}ChangeConfig(t *testing.T) {
+	var {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} *{{returnType}}
+	resourceName := "sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.test"
+	resource.Test(t, resource.TestCase{
+		Providers:    testAccProviders,
+		CheckDestroy: testAccCheck{{returnType}}Destroy,
+		Steps: []resource.TestStep{
+			{
+				Config: testAccSumologic{{returnType}}Config,
+				Check: resource.ComposeTestCheckFunc(
+					testAccCheck{{returnType}}Exists(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}, t),
+					testAccCheck{{returnType}}Attributes(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}),
+{{#models}}
+  {{#model}}
+    {{#vendorExtensions.x-tf-resource}}
+      {{#vars}}
+        {{^vendorExtensions.x-tf-resource-readonly}}
+          resource.TestCheckResourceAttr(resourceName, "{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}{{#isListContainer}}.#{{/isListContainer}}", ""),
+        {{/vendorExtensions.x-tf-resource-readonly}}
+      {{/vars}}
+    {{/vendorExtensions.x-tf-resource}}
+  {{/model}}
+{{/models}}
+				),
+			},
+			{
+				ResourceName:            resourceName,
+				ImportState:             true,
+				ImportStateVerify:       true,
+				ImportStateVerifyIgnore: []string{"lookup_by_name", "destroy"},
+			},
+			{
+				Config: testAccSumologic{{returnType}}ConfigAll,
+				Check: resource.ComposeTestCheckFunc(
+					// check the id of this resource is the same as the one in the previous step
+					testAccCheck{{returnType}}Id(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}),
+					testAccCheck{{returnType}}Exists(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}, t),
+					testAccCheck{{returnType}}Attributes(resourceName, &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}),
+{{#models}}
+  {{#model}}
+    {{#vendorExtensions.x-tf-resource}}
+      {{#vars}}
+        {{^vendorExtensions.x-tf-resource-readonly}}
+          resource.TestCheckResourceAttr(resourceName, "{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}{{#isListContainer}}.#{{/isListContainer}}", ""),
+        {{/vendorExtensions.x-tf-resource-readonly}}
+      {{/vars}}
+    {{/vendorExtensions.x-tf-resource}}
+  {{/model}}
+{{/models}}
+				),
+			},
+		},
+	})
+}
+
+func TestAccSumologic{{returnType}}ManualDeletion(t *testing.T) {
+	var {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} *{{returnType}}
+
+	delete{{returnType}} := func() {
+		c := testAccProvider.Meta().(*Client)
+		_, err := c.Get{{returnType}}({{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.ID)
+		if err != nil {
+			t.Fatal(fmt.Sprintf("attempted to delete {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} %s but it does not exist (%s)", {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.ID, err))
+		}
+		err = c.Delete{{returnType}}({{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.ID)
+		if err != nil {
+			t.Fatal(fmt.Sprintf("failed to delete {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} %s (%s)", {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.ID, err))
+		}
+	}
+
+	resource.Test(t, resource.TestCase{
+		Providers: testAccProviders,
+		Steps: []resource.TestStep{
+			{
+				Config: testAccSumologic{{returnType}}Config,
+				Check: resource.ComposeTestCheckFunc(
+					testAccCheck{{returnType}}Exists("sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.test", &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}, t),
+{{#models}}
+  {{#model}}
+    {{#vendorExtensions.x-tf-resource}}
+      {{#vars}}
+        {{^vendorExtensions.x-tf-resource-readonly}}
+          resource.TestCheckResourceAttr("sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.test", "{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}{{#isListContainer}}.#{{/isListContainer}}", ""),
+        {{/vendorExtensions.x-tf-resource-readonly}}
+      {{/vars}}
+    {{/vendorExtensions.x-tf-resource}}
+  {{/model}}
+{{/models}}
+				),
+			},
+			{
+				PreConfig: delete{{returnType}}, // simulate a manual deletion by deleting the {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} between the 2 applies
+				Config:    testAccSumologic{{returnType}}Config,
+				Check: resource.ComposeTestCheckFunc(
+					testAccCheck{{returnType}}Exists("sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.test", &{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}, t),
+{{#models}}
+  {{#model}}
+    {{#vendorExtensions.x-tf-resource}}
+      {{#vars}}
+        {{^vendorExtensions.x-tf-resource-readonly}}
+          resource.TestCheckResourceAttr("sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}.test", "{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}{{#isListContainer}}.#{{/isListContainer}}", ""),
+        {{/vendorExtensions.x-tf-resource-readonly}}
+      {{/vars}}
+    {{/vendorExtensions.x-tf-resource}}
+  {{/model}}
+{{/models}}
+				),
+			},
+		},
+	})
+}
+
+// TODO: if we keep the {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}'s destroy attribute we need to include a test checking if destroy=false works as expected
+
+// Returns a function checking that the {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} with the id from the state file has an expected id.
+// The expected id is specified in the {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} passed as parameter
+func testAccCheck{{returnType}}Id(name string, {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} **{{returnType}}) resource.TestCheckFunc {
+	return func(s *terraform.State) error {
+		rs, ok := s.RootModule().Resources[name]
+		if !ok {
+			return fmt.Errorf("not found: %s", name)
+		}
+
+		if rs.Primary.ID == "" {
+			return fmt.Errorf("{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} ID is not set")
+		}
+
+		id := rs.Primary.ID
+
+		expectedId := (**{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}).ID
+		if id != expectedId {
+			return fmt.Errorf("incorrect {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} id: got %s; expected %s", id, expectedId)
+		}
+		return nil
+	}
+}
+
+// Returns a function checking that the {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} with the id from the state exists.
+// If the collecor exists, its attributes are updated in *{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}
+func testAccCheck{{returnType}}Exists(name string, {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} **{{returnType}}, t *testing.T) resource.TestCheckFunc {
+	return func(s *terraform.State) error {
+		rs, ok := s.RootModule().Resources[name]
+		if !ok {
+			return fmt.Errorf("not found: %s", name)
+		}
+
+		if rs.Primary.ID == "" {
+			return fmt.Errorf("{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} ID is not set")
+		}
+
+		id := rs.Primary.ID
+		c := testAccProvider.Meta().(*Client)
+		var err error
+		*{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}, err = c.Get{{returnType}}(id)
+		if err != nil {
+			return fmt.Errorf("{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} %s not found", id)
+		}
+		return nil
+	}
+}
+
+// Returns a function checking that the attributes in the state match that attributes of the actual resource created
+func testAccCheck{{returnType}}Attributes(name string, expected **{{returnType}}) resource.TestCheckFunc {
+	return func(s *terraform.State) error {
+		f := resource.ComposeTestCheckFunc(
+			resource.TestCheckResourceAttr(name, "name", (**expected).Name),
+			resource.TestCheckResourceAttr(name, "description", (**expected).Description),
+			resource.TestCheckResourceAttr(name, "filter_predicate", (**expected).FilterPredicate),
+			//resource.TestCheckResourceAttr(name, "users.0", (**expected).Users[0]),
+			//resource.TestCheckResourceAttr(name, "users.#", string(len((**expected).Users))),
+			//resource.TestCheckResourceAttr(name, "capabilities.0", (**expected).Capabilities[0]),
+			//resource.TestCheckResourceAttr(name, "capabilities.#", string(len((**expected).Capabilities))),
+		)
+		return f(s)
+	}
+}
+
+func testAccCheck{{returnType}}Destroy(s *terraform.State) error {
+	c := testAccProvider.Meta().(*Client)
+
+	for _, rs := range s.RootModule().Resources {
+		if rs.Type != "sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}" {
+			continue
+		}
+
+		if rs.Primary.ID == "" {
+			return fmt.Errorf("{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} destruction check: {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} ID is not set")
+		}
+
+		id := rs.Primary.ID
+		{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}, err := c.Get{{returnType}}(id)
+		if {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} != nil {
+			if err == nil {
+				return fmt.Errorf("{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} destruction check: {{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} %s is still present", id)
+			}
+			// check that the error is what we expect
+			if !strings.Contains(err.Error(), "404") {
+				return fmt.Errorf("{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}} destruction check: unexpected error %s", err)
+			}
+		}
+	}
+	return nil
+}
+
+var testAccSumologic{{returnType}}ConfigMinimal = `
+
+resource "sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}" "test" {
+  name = "MyRole"
+}
+`
+
+var testAccSumologic{{returnType}}Config = `
+
+resource "sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}" "test" {
+{{#models}}
+  {{#model}}
+    {{#vendorExtensions.x-tf-resource}}
+      {{#vars}}
+        {{^vendorExtensions.x-tf-resource-readonly}}
+          {{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}} = {{#isListContainer}}[{{/isListContainer}}""{{#isListContainer}}]{{/isListContainer}}
+        {{/vendorExtensions.x-tf-resource-readonly}}
+      {{/vars}}
+    {{/vendorExtensions.x-tf-resource}}
+  {{/model}}
+{{/models}}
+}
+`
+
+var testAccSumologic{{returnType}}ConfigLookupByName = `
+
+resource "sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}" "test" {
+{{#models}}
+  {{#model}}
+    {{#vendorExtensions.x-tf-resource}}
+      {{#vars}}
+        {{^vendorExtensions.x-tf-resource-readonly}}
+          {{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}} = {{#isListContainer}}[{{/isListContainer}}""{{#isListContainer}}]{{/isListContainer}}
+        {{/vendorExtensions.x-tf-resource-readonly}}
+      {{/vars}}
+    {{/vendorExtensions.x-tf-resource}}
+  {{/model}}
+{{/models}}
+}
+`
+
+var testAccSumologic{{returnType}}ConfigAll = `
+resource "sumologic_{{#lambda.lowercase}}{{returnType}}{{/lambda.lowercase}}" "test" {
+
+{{#models}}
+  {{#model}}
+    {{#vendorExtensions.x-tf-resource}}
+      {{#vars}}
+        {{^vendorExtensions.x-tf-resource-readonly}}
+          {{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}} = {{#isListContainer}}[{{/isListContainer}}""{{#isListContainer}}]{{/isListContainer}}
+        {{/vendorExtensions.x-tf-resource-readonly}}
+      {{/vars}}
+    {{/vendorExtensions.x-tf-resource}}
+  {{/model}}
+{{/models}}
+}
+`
+{{/vendorExtensions.x-tf-create}}
+  {{/operation}}
+{{/operations}}
+  {{/apis}}
+{{/apiInfo}}

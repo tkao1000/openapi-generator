@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="24" passed="24">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="878" started-at="2019-08-29T17:40:19Z" finished-at="2019-08-29T17:40:20Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="878" started-at="2019-08-29T17:40:19Z" finished-at="2019-08-29T17:40:20Z">
+      <class name="org.openapitools.codegen.cmd.GenerateTest">
+        <test-method status="PASS" signature="testAdditionalProperties()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testAdditionalProperties" duration-ms="622" started-at="2019-08-29T17:40:19Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdditionalProperties -->
+        <test-method status="PASS" signature="testApiPackage()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testApiPackage" duration-ms="8" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testApiPackage -->
+        <test-method status="PASS" signature="testArtifactId()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testArtifactId" duration-ms="7" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testArtifactId -->
+        <test-method status="PASS" signature="testArtifactVersion()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testArtifactVersion" duration-ms="7" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testArtifactVersion -->
+        <test-method status="PASS" signature="testAuth()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testAuth" duration-ms="17" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuth -->
+        <test-method status="PASS" signature="testConfigJson()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testConfigJson" duration-ms="10" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfigJson -->
+        <test-method status="PASS" signature="testConfigYaml()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testConfigYaml" duration-ms="10" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfigYaml -->
+        <test-method status="PASS" signature="testGroupId()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testGroupId" duration-ms="5" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupId -->
+        <test-method status="PASS" signature="testImportMappings()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testImportMappings" duration-ms="9" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testImportMappings -->
+        <test-method status="PASS" signature="testInstantiationTypes()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testInstantiationTypes" duration-ms="10" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInstantiationTypes -->
+        <test-method status="PASS" signature="testInvokerPackage()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testInvokerPackage" duration-ms="6" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvokerPackage -->
+        <test-method status="PASS" signature="testLanguageSpecificPrimitives()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testLanguageSpecificPrimitives" duration-ms="5" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLanguageSpecificPrimitives -->
+        <test-method status="PASS" signature="testLibrary()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testLibrary" duration-ms="5" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLibrary -->
+        <test-method status="PASS" signature="testModelPackage()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testModelPackage" duration-ms="6" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testModelPackage -->
+        <test-method status="PASS" signature="testPackageName()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testPackageName" duration-ms="5" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPackageName -->
+        <test-method status="PASS" signature="testRequiredArgs_LongArgs()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testRequiredArgs_LongArgs" duration-ms="3" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequiredArgs_LongArgs -->
+        <test-method status="PASS" signature="testRequiredArgs_ShortArgs()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testRequiredArgs_ShortArgs" duration-ms="3" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequiredArgs_ShortArgs -->
+        <test-method status="PASS" signature="testSkipOverwrite()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testSkipOverwrite" duration-ms="8" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkipOverwrite -->
+        <test-method status="PASS" signature="testStrictSpec()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testStrictSpec" duration-ms="8" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStrictSpec -->
+        <test-method status="PASS" signature="testTemplateDir()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testTemplateDir" duration-ms="7" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTemplateDir -->
+        <test-method status="PASS" signature="testTypeMappings()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testTypeMappings" duration-ms="7" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTypeMappings -->
+        <test-method status="PASS" signature="testVerbose()[pri:0, instance:org.openapitools.codegen.cmd.GenerateTest@548e7350]" name="testVerbose" duration-ms="7" started-at="2019-08-29T17:40:20Z" finished-at="2019-08-29T17:40:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVerbose -->
+      </class> <!-- org.openapitools.codegen.cmd.GenerateTest -->
+      <class name="org.openapitools.codegen.cmd.utils.OptionUtilsTest">
+        <test-method status="PASS" signature="splitCommaSeparatedList()[pri:0, instance:org.openapitools.codegen.cmd.utils.OptionUtilsTest@5442a311]" name="splitCommaSeparatedList" duration-ms="44" started-at="2019-08-29T17:40:19Z" finished-at="2019-08-29T17:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- splitCommaSeparatedList -->
+        <test-method status="PASS" signature="testParseCommaSeparatedTuples()[pri:0, instance:org.openapitools.codegen.cmd.utils.OptionUtilsTest@5442a311]" name="testParseCommaSeparatedTuples" duration-ms="4" started-at="2019-08-29T17:40:19Z" finished-at="2019-08-29T17:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParseCommaSeparatedTuples -->
+      </class> <!-- org.openapitools.codegen.cmd.utils.OptionUtilsTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

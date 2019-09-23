@@ -1,0 +1,11 @@
+package 
+
+// ---------- TYPES ----------
+    type Pet struct {
+      id long `json:"id"`
+      category Category `json:"category"`
+      name string `json:"name"`
+      photoUrls array `json:"photoUrls"`
+      tags array `json:"tags"`
+      status string `json:"status"`
+    }

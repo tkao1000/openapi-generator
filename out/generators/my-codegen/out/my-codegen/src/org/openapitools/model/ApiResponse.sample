@@ -1,0 +1,8 @@
+package 
+
+// ---------- TYPES ----------
+    type ApiResponse struct {
+      code integer `json:"code"`
+      type string `json:"type"`
+      message string `json:"message"`
+    }

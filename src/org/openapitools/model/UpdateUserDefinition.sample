@@ -1,0 +1,9 @@
+package 
+
+// ---------- TYPES ----------
+    type UpdateUserDefinition struct {
+      firstName string `json:"firstName"`
+      lastName string `json:"lastName"`
+      isActive boolean `json:"isActive"`
+      roleIds array `json:"roleIds"`
+    }

@@ -1,0 +1,301 @@
+openapi: 3.0.1
+info:
+  title: API
+  description: Welcome to the API reference.
+  version: 1.0.0 Beta
+security:
+- basicAuth: []
+tags:
+- name: userManagement
+  description: User management API
+paths:
+  /v1beta/users:
+    post:
+      tags:
+      - userManagement
+      x-tf-create: true
+      summary: Create a new user.
+      description: Create a new user in the organization.
+      operationId: createUser
+      requestBody:
+        description: Information about the new user.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUserDefinition'
+        required: true
+      responses:
+        200:
+          description: The user has been created.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        default:
+          description: Operation failed with an error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+  /v1beta/users/{id}:
+    get:
+      tags:
+      - userManagement
+      summary: Get a user.
+      description: Get a user with the given identifier from the organization.
+      operationId: getUser
+      parameters:
+      - name: id
+        in: path
+        description: Identifier of user to return.
+        required: true
+        schema:
+          type: string
+      responses:
+        200:
+          description: User object that was requested.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        default:
+          description: Operation failed with an error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    put:
+      tags:
+      - userManagement
+      summary: Update a user.
+      description: |
+        Update an existing user in the organization.
+      operationId: updateUser
+      parameters:
+      - name: id
+        in: path
+        description: Identifier of the user to update.
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: Information to update about the user.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUserDefinition'
+        required: true
+      responses:
+        200:
+          description: The user was successfully modified.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        default:
+          description: Operation failed with an error.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+    delete:
+      tags:
+      - userManagement
+      summary: Delete a user.
+      description: |
+        Delete a user with the given identifier from the organization and transfer their content to the user with the identifier specified in "transferTo". If "transferTo" is not specified the contents are deleted.
+      operationId: deleteUser
+      parameters:
+      - name: id
+        in: path
+        description: Identifier of the user to delete.
+        required: true
+        schema:
+          type: string
+      - name: transferTo
+        in: query
+        description: Identifier of the user to transfer the content from the deleted
+          user.
+        schema:
+          type: string
+      responses:
+        204:
+          description: User was deleted successfully.
+          content: {}
+        default:
+          description: Operation failed with an error.
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    CreateUserDefinition:
+      required:
+      - email
+      - firstName
+      - lastName
+      - roleIds
+      type: object
+      properties:
+        firstName:
+          x-tfType: TypeString
+          maxLength: 128
+          minLength: 1
+          type: string
+          description: First name of the user.
+          example: John
+        lastName:
+          x-tfType: TypeString
+          maxLength: 128
+          minLength: 0
+          type: string
+          description: Last name of the user.
+          example: Doe
+        email:
+          x-tfType: TypeString
+          maxLength: 255
+          type: string
+          description: Email address of the user.
+          format: email
+          example: johndoe@acme.com
+          x-tf-resource-writeonly: true
+        roleIds:
+          x-tfType: TypeList
+          type: array
+          description: List of roleIds associated with the user.
+          items:
+            type: string
+    User:
+      x-tf-resource: true
+      allOf:
+      - $ref: '#/components/schemas/CreateUserDefinition'
+      - $ref: '#/components/schemas/Metadata'
+      - required:
+        - id
+        type: object
+        properties:
+          id:
+            type: string
+            description: Unique identifier for the user.
+            x-tf-resource-readonly: true
+          isActive:
+            type: boolean
+            description: Is the user active.
+          isLocked:
+            type: boolean
+            description: Is the user locked.
+            x-tf-resource-readonly: true
+          lastLoginTimestamp:
+            type: string
+            description: Timestamp of the last login for the user in UTC. Will be
+              null if the user has never logged in.
+            format: date-time
+            x-tf-resource-readonly: true
+    UpdateUserDefinition:
+      required:
+      - firstName
+      - isActive
+      - lastName
+      - roleIds
+      type: object
+      properties:
+        firstName:
+          maxLength: 128
+          minLength: 1
+          type: string
+          description: First name of the user.
+          example: John
+        lastName:
+          maxLength: 128
+          minLength: 0
+          type: string
+          description: Last name of the user.
+          example: Doe
+        isActive:
+          type: boolean
+          description: Is the user active.
+        roleIds:
+          type: array
+          description: List of roleIds associated with the user.
+          items:
+            type: string
+    Metadata:
+      required:
+      - createdAt
+      - createdBy
+      - modifiedAt
+      - modifiedBy
+      type: object
+      properties:
+        createdAt:
+          type: string
+          description: Creation timestamp in UTC in [RFC3339](https://tools.ietf.org/html/rfc3339)
+            format.
+          format: date-time
+          x-tf-resource-readonly: true
+        createdBy:
+          type: string
+          description: Identifier of the user who created the resource.
+          x-tf-resource-readonly: true
+        modifiedAt:
+          type: string
+          description: Last modification timestamp in UTC.
+          format: date-time
+          x-tf-resource-readonly: true
+        modifiedBy:
+          type: string
+          description: Identifier of the user who last modified the resource.
+          x-tf-resource-readonly: true
+    ErrorDescription:
+      required:
+      - code
+      - message
+      type: object
+      properties:
+        code:
+          type: string
+          description: An error code describing the type of error.
+          example: auth:password_too_short
+        message:
+          type: string
+          description: A short English-language description of the error.
+          example: Your password was too short.
+        detail:
+          type: string
+          description: An optional fuller English-language description of the error.
+          example: Your password was 5 characters long, the minimum length is 12 characters.  See
+            http://example.com/password for more information.
+        meta:
+          type: object
+          properties: {}
+          description: An optional list of metadata about the error.
+          example:
+            minLength: 12
+            actualLength: 5
+    ErrorResponse:
+      required:
+      - errors
+      - id
+      type: object
+      properties:
+        id:
+          type: string
+          description: An identifier for the error; this is unique to the specific
+            API request.
+          example: IUUQI-DGH5I-TJ045
+        errors:
+          type: array
+          description: A list of one or more causes of the error.
+          example:
+          - code: auth:password_too_short
+            message: Your password was too short.
+          - code: auth:password_character_classes
+            message: Your password did not contain any non-alphanumeric characters
+          items:
+            $ref: '#/components/schemas/ErrorDescription'
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+

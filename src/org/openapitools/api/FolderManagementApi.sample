@@ -1,0 +1,68 @@
+
+# This is a sample api mustache template.  It is representing a ficticous
+# language and won't be usable or compile to anything without lots of changes.
+# Use it as an example.  You can access the variables in the generator object
+# like such:
+
+# use the package from the `apiPackage` variable
+package: org.openapitools.api
+
+# operations block
+  classname: FolderManagementApi
+
+  # loop over each operation in the API:
+
+
+  # end of operations block
+
+
+// ---------- BEGIN  ----------
+package sumologic
+
+import (
+"encoding/json"
+"fmt"
+e "./error_description"
+)
+
+// ---------- ENDPOINTS ----------
+
+
+
+
+
+
+
+
+// ---------- TYPES ----------
+type UpdateUserDefinition struct {
+FirstName string `json:"firstName"`
+LastName string `json:"lastName"`
+IsActive bool `json:"isActive"`
+RoleIds []string `json:"roleIds"`
+}
+
+type User struct {
+FirstName string `json:"firstName"`
+LastName string `json:"lastName"`
+Email string `json:"email"`
+RoleIds []string `json:"roleIds"`
+CreatedAt string `json:"createdAt"`
+CreatedBy string `json:"createdBy"`
+ModifiedAt string `json:"modifiedAt"`
+ModifiedBy string `json:"modifiedBy"`
+Id string `json:"id"`
+IsActive bool `json:"isActive,omitempty"`
+IsLocked bool `json:"isLocked,omitempty"`
+IsMfaEnabled bool `json:"isMfaEnabled,omitempty"`
+LastLoginTimestamp string `json:"lastLoginTimestamp,omitempty"`
+}
+
+type CreateUserDefinition struct {
+FirstName string `json:"firstName"`
+LastName string `json:"lastName"`
+Email string `json:"email"`
+RoleIds []string `json:"roleIds"`
+}
+
+// ---------- END ----------

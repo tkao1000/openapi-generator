@@ -1,0 +1,7 @@
+package 
+
+// ---------- TYPES ----------
+    type Category struct {
+      id long `json:"id"`
+      name string `json:"name"`
+    }

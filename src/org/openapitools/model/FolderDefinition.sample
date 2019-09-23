@@ -1,0 +1,8 @@
+package 
+
+// ---------- TYPES ----------
+    type FolderDefinition struct {
+      name string `json:"name"`
+      description string `json:"description"`
+      parentId string `json:"parentId"`
+    }

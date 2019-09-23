@@ -1,0 +1,153 @@
+
+# This is a sample api mustache template.  It is representing a ficticous
+# language and won't be usable or compile to anything without lots of changes.
+# Use it as an example.  You can access the variables in the generator object
+# like such:
+
+# use the package from the `apiPackage` variable
+package: {{package}}
+
+# operations block
+{{#operations}}
+  classname: {{classname}}
+
+  # loop over each operation in the API:
+  {{#operation}}
+
+    {{#vendorExtensions.x-tf-operation-create}}
+      # each operation has an `operationId`:
+      operationId: {{operationId}}
+
+      {{#tags}}
+      {{/tags}}
+      # and parameters:
+      {{#allParams}}
+        {{paramName}}: {{dataType}}
+      {{/allParams}}
+
+    {{/vendorExtensions.x-tf-operation-create}}
+  {{/operation}}
+
+  # end of operations block
+{{/operations}}
+
+
+// ---------- BEGIN {{vendorExtensions.x-tf-object}} ----------
+package sumologic
+
+import (
+"encoding/json"
+"fmt"
+e "./error_description"
+)
+
+// ---------- ENDPOINTS ----------
+
+{{#operations}}
+
+  {{#operation}}
+
+    {{#vendorExtensions.x-tf-operation-delete}}
+      func (httpClient *Client) {{operationId}}(id string) error {
+      url := fmt.Sprintf("v1beta/users/%s" "{{path}}", id)
+
+      _, err := httpClient.Delete{{httpMethod}}(url)
+      return err
+      }
+    {{/vendorExtensions.x-tf-operation-delete}}
+
+    {{#vendorExtensions.x-tf-operation-get}}
+      func (httpClient *Client) {{operationId}}(id string) (*{{vendorExtensions.x-tf-operation-object}}, error) {
+      url := fmt.Sprintf("v1beta/users/%s" {{path}}, id)
+      var response User {{vendorExtensions.x-tf-object}}
+
+      responseBody, _, err := httpClient.Get{{httpMethod}}(url)
+      if err != nil {
+      return nil, err
+      }
+
+      err = json.Unmarshal(responseBody, &response)
+
+      if err != nil {
+      return nil, err
+      }
+
+      return &response, nil
+      }
+    {{/vendorExtensions.x-tf-operation-get}}
+
+    {{#vendorExtensions.x-tf-operation-update}}
+      func (httpClient *Client) {{operationId}}(id string, {{#lambdas.camelcase_params}}{{bodyParam.dataType}}{{/lambdas.camelcase_params}} {{bodyParam.dataType}}) (*{{vendorExtensions.x-tf-operation-object}}, error) {
+      url := fmt.Sprintf("v1beta/users/%s" {{path}}, id)
+      var response User {{vendorExtensions.x-tf-object}}
+
+      responseBody, err := httpClient.Put {{httpMethod}}(url, arg{{bodyParam.dataType}})
+      if err != nil {
+      return nil, err
+      }
+
+      err = json.Unmarshal(responseBody, &response)
+
+      if err != nil {
+      return nil, err
+      }
+
+      return &response, nil
+      }
+    {{/vendorExtensions.x-tf-operation-update}}
+
+    {{#vendorExtensions.x-tf-operation-create}}
+      func (httpClient *Client) {{operationId}}(arg{{bodyParam.dataType}} {{bodyParam.dataType}}) (*{{vendorExtensions.x-tf-operation-object}}, error) {
+      url := fmt.Sprintf("{{path}}")
+      var response User {{vendorExtensions.x-tf-object}}
+
+      responseBody, err := httpClient.Post {{httpMethod}}(url, arg{{bodyParam.dataType}})
+      if err != nil {
+      return nil, err
+      }
+
+      err = json.Unmarshal(responseBody, &response)
+
+      if err != nil {
+      return nil, err
+      }
+
+      return &response, nil
+      }
+    {{/vendorExtensions.x-tf-operation-create}}
+
+  {{/operation}}
+{{/operations}}
+
+// ---------- TYPES ----------
+type UpdateUserDefinition struct {
+FirstName string `json:"firstName"`
+LastName string `json:"lastName"`
+IsActive bool `json:"isActive"`
+RoleIds []string `json:"roleIds"`
+}
+
+type User struct {
+FirstName string `json:"firstName"`
+LastName string `json:"lastName"`
+Email string `json:"email"`
+RoleIds []string `json:"roleIds"`
+CreatedAt string `json:"createdAt"`
+CreatedBy string `json:"createdBy"`
+ModifiedAt string `json:"modifiedAt"`
+ModifiedBy string `json:"modifiedBy"`
+Id string `json:"id"`
+IsActive bool `json:"isActive,omitempty"`
+IsLocked bool `json:"isLocked,omitempty"`
+IsMfaEnabled bool `json:"isMfaEnabled,omitempty"`
+LastLoginTimestamp string `json:"lastLoginTimestamp,omitempty"`
+}
+
+type CreateUserDefinition struct {
+FirstName string `json:"firstName"`
+LastName string `json:"lastName"`
+Email string `json:"email"`
+RoleIds []string `json:"roleIds"`
+}
+
+// ---------- END ----------

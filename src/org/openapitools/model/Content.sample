@@ -1,0 +1,14 @@
+package 
+
+// ---------- TYPES ----------
+    type Content struct {
+      createdAt DateTime `json:"createdAt"`
+      createdBy string `json:"createdBy"`
+      modifiedAt DateTime `json:"modifiedAt"`
+      modifiedBy string `json:"modifiedBy"`
+      id string `json:"id"`
+      name string `json:"name"`
+      itemType string `json:"itemType"`
+      parentId string `json:"parentId"`
+      permissions array `json:"permissions"`
+    }

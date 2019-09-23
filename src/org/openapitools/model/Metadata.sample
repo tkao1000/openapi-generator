@@ -1,0 +1,9 @@
+package 
+
+// ---------- TYPES ----------
+    type Metadata struct {
+      createdAt DateTime `json:"createdAt"`
+      createdBy string `json:"createdBy"`
+      modifiedAt DateTime `json:"modifiedAt"`
+      modifiedBy string `json:"modifiedBy"`
+    }

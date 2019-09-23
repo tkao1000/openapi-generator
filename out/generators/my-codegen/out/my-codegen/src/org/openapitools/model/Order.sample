@@ -1,0 +1,11 @@
+package 
+
+// ---------- TYPES ----------
+    type Order struct {
+      id long `json:"id"`
+      petId long `json:"petId"`
+      quantity integer `json:"quantity"`
+      shipDate DateTime `json:"shipDate"`
+      status string `json:"status"`
+      complete boolean `json:"complete"`
+    }

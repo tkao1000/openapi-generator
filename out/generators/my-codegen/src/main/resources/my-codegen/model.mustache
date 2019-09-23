@@ -1,0 +1,12 @@
+package {{packageName}}
+
+// ---------- TYPES ----------
+{{#models}}
+  {{#model}}
+    type {{name}} struct {
+    {{#vars}}
+      {{name}} {{baseType}} `json:"{{baseName}}"`
+    {{/vars}}
+    }
+  {{/model}}
+{{/models}}

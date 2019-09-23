@@ -1,0 +1,9 @@
+package 
+
+// ---------- TYPES ----------
+    type ErrorDescription struct {
+      code string `json:"code"`
+      message string `json:"message"`
+      detail string `json:"detail"`
+      meta object `json:"meta"`
+    }

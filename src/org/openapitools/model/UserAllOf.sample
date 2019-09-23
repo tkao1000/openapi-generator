@@ -1,0 +1,9 @@
+package 
+
+// ---------- TYPES ----------
+    type User_allOf struct {
+      id string `json:"id"`
+      isActive boolean `json:"isActive"`
+      isLocked boolean `json:"isLocked"`
+      lastLoginTimestamp DateTime `json:"lastLoginTimestamp"`
+    }

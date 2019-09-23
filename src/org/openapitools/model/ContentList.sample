@@ -1,0 +1,6 @@
+package 
+
+// ---------- TYPES ----------
+    type ContentList struct {
+      data array `json:"data"`
+    }

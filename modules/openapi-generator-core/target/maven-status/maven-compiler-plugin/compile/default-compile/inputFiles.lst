@@ -1,0 +1,16 @@
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/validation/GenericValidator.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/api/TemplatingGenerator.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/validation/Validated.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/validation/Validator.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/config/GeneratorSettings.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/meta/Stability.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/api/AbstractTemplatingEngineAdapter.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/validation/Severity.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/api/TemplatingEngineAdapter.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/config/WorkflowSettings.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/meta/GeneratorMetadata.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/validation/ValidationRule.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/validation/Valid.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/config/Context.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/validation/ValidationResult.java
+/Users/tkao/git/openapi-generator/modules/openapi-generator-core/src/main/java/org/openapitools/codegen/validation/Invalid.java

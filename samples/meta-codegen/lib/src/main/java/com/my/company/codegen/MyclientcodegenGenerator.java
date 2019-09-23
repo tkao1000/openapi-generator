@@ -128,9 +128,19 @@ public class MyclientcodegenGenerator extends DefaultCodegen implements CodegenC
      * entire object tree available.  If the input file has a suffix of `.mustache
      * it will be processed by the template engine.  Otherwise, it will be copied
      */
-    supportingFiles.add(new SupportingFile("myFile.mustache",   // the input template or file
-      "",                                                       // the destination folder, relative `outputFolder`
-      "myFile.sample")                                          // the output file
+    supportingFiles.add(new SupportingFile("tfClient.mustache",   // the input template or file
+        "",                                                       // the destination folder, relative `outputFolder`
+        "client.go")                                          // the output file
+    );
+
+    supportingFiles.add(new SupportingFile("tfResource.mustache",   // the input template or file
+        "",                                                       // the destination folder, relative `outputFolder`
+        "resource.go")                                          // the output file
+    );
+
+    supportingFiles.add(new SupportingFile("tfResourceTest.mustache",   // the input template or file
+        "",                                                       // the destination folder, relative `outputFolder`
+        "resourceTest.go")                                          // the output file
     );
 
     /**

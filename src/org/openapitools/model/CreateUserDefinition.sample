@@ -1,0 +1,9 @@
+package 
+
+// ---------- TYPES ----------
+    type CreateUserDefinition struct {
+      firstName string `json:"firstName"`
+      lastName string `json:"lastName"`
+      email string `json:"email"`
+      roleIds array `json:"roleIds"`
+    }

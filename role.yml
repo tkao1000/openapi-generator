@@ -1,0 +1,385 @@
+openapi: 3.0.1
+info:
+  title: API
+  description: Welcome to the API reference.
+  version: 1.0.0 Beta
+security:
+- basicAuth: []
+tags:
+- name: roleManagement
+  description: Role management API
+paths:
+  # /roles endpoint
+  roles:
+    get:
+      summary: Get a list of roles.
+      description: >-
+        Get a list of all the roles in the organization. The response is paginated with a default limit of 100 roles
+        per page.
+      operationId: listRoles
+      tags:
+      - roleManagement
+      parameters:
+      - name: limit
+        description: >-
+          Limit the number of roles returned in the response. The number of roles returned may be less than the `limit`.
+        required: false
+        in: query
+        schema:
+          default: 100
+          minimum: 1
+          type: integer
+          maximum: 1000
+          format: int32
+      - name: token
+        description: >-
+          Continuation token to get the next page of results. A page object with the next continuation token is returned
+          in the response body. Subsequent GET requests should specify the continuation token to get the next page of
+          results. `token` is set to null when no more pages are left.
+        required: false
+        in: query
+        schema:
+          type: string
+      - name: sortBy
+        description: >-
+          Sort the list of roles by the `name` field.
+        required: false
+        in: query
+        schema:
+          type: string
+      - name: name
+        description: Only return roles matching the given name.
+        required: false
+        in: query
+        schema:
+          minLength: 1
+          type: string
+      responses:
+        200:
+          description: A paginated list of roles in the organization.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListRoleModelsResponse'
+    post:
+      x-tf-create: true
+      summary: Create a new role.
+      description: Create a new role in the organization.
+      operationId: createRole
+      tags:
+      - roleManagement
+      parameters: []
+      requestBody:
+        description: Information about the new role.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateRoleDefinition'
+      responses:
+        200:
+          description: The role has been created.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RoleModel'
+
+  # /roles/{id} endpoint
+  roleId:
+    get:
+      summary: Get a role.
+      description: Get a role with the given identifier in the organization.
+      operationId: getRole
+      tags:
+      - roleManagement
+      parameters:
+      - name: id
+        description: Identifier of the role to fetch.
+        required: true
+        in: path
+        schema:
+          type: string
+      responses:
+        200:
+          description: Role object that was requested.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RoleModel'
+    put:
+      summary: Update a role.
+      description: >-
+        Update an existing role in the organization.
+      operationId: updateRole
+      tags:
+      - roleManagement
+      parameters:
+      - name: id
+        description: Identifier of the role to update.
+        required: true
+        in: path
+        schema:
+          type: string
+      requestBody:
+        description: Information to update about the role.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateRoleDefinition'
+      responses:
+        200:
+          description: The user was successfully modified.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RoleModel'
+    delete:
+      summary: Delete a role.
+      description: Delete a role with the given identifier from the organization.
+      operationId: deleteRole
+      tags:
+      - roleManagement
+      parameters:
+      - name: id
+        description: Identifier of the role to delete.
+        required: true
+        in: path
+        schema:
+          type: string
+      responses:
+        204:
+          description: Role was deleted successfully.
+    # /roles/{roleId}/users/{userId} endpoint.
+    userId:
+      put:
+        summary: Assign a role to a user.
+        description: >-
+          Assign a role to a user in the organization.
+        operationId: assignRoleToUser
+        tags:
+        - roleManagement
+        parameters:
+        - name: roleId
+          description: Identifier of the role to assign.
+          required: true
+          in: path
+          schema:
+            type: string
+        - name: userId
+          description: Identifier of the user to assign the role to.
+          required: true
+          in: path
+          schema:
+            type: string
+        responses:
+          200:
+            description: Role was successfully assigned to the user.
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/RoleModel'
+      delete:
+        summary: Remove role from a user.
+        description: >-
+          Remove a role from a user in the organization.
+        operationId: removeRoleFromUser
+        tags:
+        - roleManagement
+        parameters:
+        - name: roleId
+          description: Identifier of the role to delete.
+          required: true
+          in: path
+          schema:
+            type: string
+        - name: userId
+          description: Identifier of the user to remove the role from.
+          required: true
+          in: path
+          schema:
+            type: string
+        responses:
+          204:
+            description: Role was successfully removed from the user.
+
+components:
+  schemas:
+    CreateRoleDefinition:
+      type: object
+      required:
+      - name
+      properties:
+        name:
+          description: Name of the role.
+          type: string
+          example: DataAdmin
+          minLength: 1
+          maxLength: 128
+        description:
+          description: Description of the role.
+          type: string
+          example: Manage data of the org.
+          minLength: 0
+          maxLength: 255
+        filterPredicate:
+          description: >-
+            A search filter to restrict access to specific logs. The filter is silently added to the beginning of each
+            query a user runs. For example, using '!_sourceCategory=billing' as a filter predicate will prevent users
+            assigned to the role from viewing logs from the source category named 'billing'.
+          type: string
+          example: '!_sourceCategory=billing'
+        users:
+          description: List of user identifiers to assign the role to.
+          type: array
+          items:
+            type: string
+          example:
+            - 0000000006743FE0
+            - 0000000005FCE0EE
+        capabilities:
+          description: >-
+            List of [capabilities](https://help.sumologic.com/Manage/Users-and-Roles/Manage-Roles/Role-Capabilities)
+            associated with this role. Valid values are
+              ### Connections
+              - manageConnections
+              ### Collectors
+              - manageCollectors
+              - viewCollectors
+              ### Dashboards
+              - shareDashboardWhitelist
+              - shareDashboardWorld
+              ### Data Management
+              - manageContent
+              - manageDataVolumeFeed
+              - manageFieldExtractionRules
+              - manageIndexes
+              - manageS3DataForwarding
+              ### Metrics
+              - manageMonitors
+              - metricsExtraction
+              ### Security
+              - ipWhitelisting
+              - manageAccessKeys
+              - manageAuditDataFeed
+              - managePasswordPolicy
+              - manageSaml
+              - manageSupportAccountAccess
+              - manageUsersAndRoles
+              - shareDashboardOutsideOrg
+          type: array
+          items:
+            type: string
+          example:
+            - manageContent
+            - manageDataVolumeFeed
+            - manageFieldExtractionRules
+            - manageIndexes
+            - manageS3DataForwarding
+    UpdateRoleDefinition:
+      type: object
+      required:
+      - name
+      - description
+      - filterPredicate
+      - users
+      - capabilities
+      properties:
+        name:
+          description: Name of the role.
+          type: string
+          example: DataAdmin
+          minLength: 1
+          maxLength: 128
+        description:
+          description: Description of the role.
+          type: string
+          example: Manage data of the org.
+          minLength: 0
+          maxLength: 255
+        filterPredicate:
+          description: >-
+            A search filter to restrict access to specific logs. The filter is silently added to the beginning of each
+            query a user runs. For example, using '!_sourceCategory=billing' as a filter predicate will prevent users
+            assigned to the role from viewing logs from the source category named 'billing'.
+          type: string
+          example: '!_sourceCategory=billing'
+        users:
+          description: List of user identifiers to assign the role to.
+          type: array
+          items:
+            type: string
+          example:
+            - 0000000006743FE0
+            - 0000000005FCE0EE
+        capabilities:
+          description: >-
+            List of [capabilities](https://help.sumologic.com/Manage/Users-and-Roles/Manage-Roles/Role-Capabilities)
+            associated with this role. Valid values are
+              ### Connections
+              - manageConnections
+              ### Collectors
+              - manageCollectors
+              - viewCollectors
+              ### Dashboards
+              - shareDashboardWhitelist
+              - shareDashboardWorld
+              ### Data Management
+              - manageContent
+              - manageDataVolumeFeed
+              - manageFieldExtractionRules
+              - manageIndexes
+              - manageS3DataForwarding
+              ### Metrics
+              - manageMonitors
+              - metricsExtraction
+              ### Security
+              - ipWhitelisting
+              - manageAccessKeys
+              - manageAuditDataFeed
+              - managePasswordPolicy
+              - manageSaml
+              - manageSupportAccountAccess
+              - manageUsersAndRoles
+              - shareDashboardOutsideOrg
+          type: array
+          items:
+            type: string
+          example:
+            - manageContent
+            - manageDataVolumeFeed
+            - manageFieldExtractionRules
+            - manageIndexes
+            - manageS3DataForwarding
+    RoleModel:
+      type: object
+      x-tf-resource: true
+      allOf:
+      - $ref: '#/components/schemas/CreateRoleDefinition'
+      - required:
+        - id
+        properties:
+          id:
+            description: Unique identifier for the role.
+            type: string
+            example: 0000000000E20FE3
+            x-tf-resource-readonly: true
+          systemDefined:
+            description: Role is system or user defined.
+            type: boolean
+            example: false
+            x-tf-resource-readonly: true
+    ListRoleModelsResponse:
+      type: object
+      required:
+      - data
+      properties:
+        data:
+          description: List of roles.
+          type: array
+          items:
+            $ref: '#/components/schemas/RoleModel'
+        next:
+          description: Next continuation token.
+          type: string
+          example: GDCiRv4vebF3UWFJQ1kySXBOR3Bzh69GR0RyWm9vCtc
