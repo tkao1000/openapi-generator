@@ -13,6 +13,18 @@ package: org.openapitools.api
   # loop over each operation in the API:
 
 
+
+
+
+
+
+
+
+
+
+
+
+
   # end of operations block
 
 
@@ -26,6 +38,66 @@ e "./error_description"
 )
 
 // ---------- ENDPOINTS ----------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

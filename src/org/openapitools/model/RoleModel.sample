@@ -1,0 +1,12 @@
+package 
+
+// ---------- TYPES ----------
+    type RoleModel struct {
+      name string `json:"name"`
+      description string `json:"description"`
+      filterPredicate string `json:"filterPredicate"`
+      users array `json:"users"`
+      capabilities array `json:"capabilities"`
+      id string `json:"id"`
+      systemDefined boolean `json:"systemDefined"`
+    }
