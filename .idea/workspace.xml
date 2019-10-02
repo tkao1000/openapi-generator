@@ -3,184 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="4d5f4ef5-78e7-46c5-b751-df2748664d7a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/folder-management.yml" beforeDir="false" afterPath="$PROJECT_DIR$/folder-management.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generic-models.yml" beforeDir="false" afterPath="$PROJECT_DIR$/generic-models.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/lib/openapi-generator-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/lib/openapi-generator-4.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/openapi-generator-cli.jar" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/openapi-generator-cli.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/original-openapi-generator-cli.jar" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/original-openapi-generator-cli.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.cmd.GenerateTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.cmd.GenerateTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.cmd.utils.OptionUtilsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.cmd.utils.OptionUtilsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/old/Surefire suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-cli/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.config.WorkflowSettingsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.config.WorkflowSettingsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.validation.GenericValidatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.validation.GenericValidatorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.validation.ValidatedTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.validation.ValidatedTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.validation.ValidationRuleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.validation.ValidationRuleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/old/Surefire suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-core/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-maven-plugin/target/lib/openapi-generator-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-maven-plugin/target/lib/openapi-generator-4.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-maven-plugin/target/maven-plugin-help.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-maven-plugin/target/maven-plugin-help.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-maven-plugin/target/openapi-generator-maven-plugin-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-maven-plugin/target/openapi-generator-maven-plugin-4.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-online/target/lib/openapi-generator-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-online/target/lib/openapi-generator-4.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-online/target/openapi-generator-online.jar" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-online/target/openapi-generator-online.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-online/target/openapi-generator-online.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-online/target/openapi-generator-online.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-online/target/surefire-reports/TEST-org.openapitools.codegen.online.api.GenApiControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-online/target/surefire-reports/TEST-org.openapitools.codegen.online.api.GenApiControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator-online/target/surefire-reports/org.openapitools.codegen.online.api.GenApiControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator-online/target/surefire-reports/org.openapitools.codegen.online.api.GenApiControllerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/classes/org/openapitools/codegen/DefaultCodegen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/classes/org/openapitools/codegen/DefaultCodegen$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/classes/org/openapitools/codegen/DefaultCodegen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/classes/org/openapitools/codegen/DefaultCodegen$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/classes/org/openapitools/codegen/DefaultCodegen.class" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/classes/org/openapitools/codegen/DefaultCodegen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/openapi-generator-4.1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/openapi-generator-4.1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.DefaultCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.DefaultCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.DefaultGeneratorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.DefaultGeneratorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.ExampleGeneratorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.ExampleGeneratorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.InlineModelResolverTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.InlineModelResolverTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.SpecValidationExceptionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.SpecValidationExceptionTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.android.AndroidClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.android.AndroidClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.bash.BashClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.bash.BashClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.bash.BashTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.bash.BashTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.config.CodegenConfiguratorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.config.CodegenConfiguratorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.config.DynamicSettingsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.config.DynamicSettingsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.csharp.CSharpClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.csharp.CSharpClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.csharp.CSharpModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.csharp.CSharpModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.dart.DartClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.dart.DartClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.dart.DartClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.dart.DartClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.dart.DartModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.dart.DartModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.eiffel.AbstractEiffelCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.eiffel.AbstractEiffelCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.eiffel.EiffelClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.eiffel.EiffelClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.elixir.ElixirClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.elixir.ElixirClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.elm.ElmClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.elm.ElmClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.fsharp.FSharpServerCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.fsharp.FSharpServerCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.go.AbstractGoCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.go.AbstractGoCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.go.GoClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.go.GoClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.go.GoClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.go.GoClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.go.GoModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.go.GoModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.haskellhttpclient.HaskellHttpClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.haskellhttpclient.HaskellHttpClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.haskellservant.HaskellModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.haskellservant.HaskellModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.haskellservant.HaskellServantCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.haskellservant.HaskellServantCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.haskellservant.HaskellServantOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.haskellservant.HaskellServantOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.html.StaticHtmlGeneratorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.html.StaticHtmlGeneratorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.AbstractJavaCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.AbstractJavaCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.JavaCXFClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.JavaCXFClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.JavaClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.JavaClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.JavaInheritanceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.JavaInheritanceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.JavaModelEnumTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.JavaModelEnumTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.JavaModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.JavaModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.AbstractJavaJAXRSServerCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.AbstractJavaJAXRSServerCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.JavaJAXRSCXFExtServerCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.JavaJAXRSCXFExtServerCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.JavaJAXRSSpecServerCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.JavaJAXRSSpecServerCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.JavaJaxrsResteasyServerCodegenModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.JavaJaxrsResteasyServerCodegenModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.JavaJerseyServerCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.JavaJerseyServerCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.JavaResteasyEapServerCodegenModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.jaxrs.JavaResteasyEapServerCodegenModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.play.JavaPlayFrameworkCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.play.JavaPlayFrameworkCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.spring.SpringCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.java.spring.SpringCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.javascript.JavascriptClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.javascript.JavascriptClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.javascript.JavascriptClosureAngularClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.javascript.JavascriptClosureAngularClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.kotlin.AbstractKotlinCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.kotlin.AbstractKotlinCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.kotlin.KotlinClientCodegenModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.kotlin.KotlinClientCodegenModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.kotlin.spring.KotlinSpringServerCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.kotlin.spring.KotlinSpringServerCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.lua.LuaClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.lua.LuaClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.lumen.PhpLumenServerOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.lumen.PhpLumenServerOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.mysql.MysqlSchemaCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.mysql.MysqlSchemaCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.mysql.MysqlSchemaOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.mysql.MysqlSchemaOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.objc.ObjcClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.objc.ObjcClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.objc.ObjcClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.objc.ObjcClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.objc.ObjcModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.objc.ObjcModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.perl.PerlClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.perl.PerlClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.perl.PerlClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.perl.PerlClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.AbstractPhpCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.AbstractPhpCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpClientExampleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpClientExampleTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpLaravelServerCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpLaravelServerCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpSymfonyServerCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.php.PhpSymfonyServerCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.python.PythonClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.python.PythonClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.python.PythonClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.python.PythonClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.python.PythonTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.python.PythonTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.r.RClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.r.RClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.ruby.AbstractRubyCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.ruby.AbstractRubyCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.ruby.RubyClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.ruby.RubyClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.ruby.RubyClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.ruby.RubyClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.rubysinatra.RubySinatraServerOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.rubysinatra.RubySinatraServerOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.rust.RustClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.rust.RustClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.scalaakka.ScalaAkkaClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.scalaakka.ScalaAkkaClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.scalaakka.ScalaAkkaClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.scalaakka.ScalaAkkaClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.scalahttpclient.ScalaHttpClientModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.scalahttpclient.ScalaHttpClientModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.scalahttpclient.ScalaHttpClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.scalahttpclient.ScalaHttpClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.serializer.SerializerUtilsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.serializer.SerializerUtilsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.silex.PhpSilexServerOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.silex.PhpSilexServerOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.slim.PhpSlimServerCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.slim.PhpSlimServerCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.slim.PhpSlimServerOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.slim.PhpSlimServerOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift3.Swift3ModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift3.Swift3ModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift3.Swift3OptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift3.Swift3OptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift4.Swift4CodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift4.Swift4CodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift4.Swift4ModelEnumTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift4.Swift4ModelEnumTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift4.Swift4ModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift4.Swift4ModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift4.Swift4OptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.swift4.Swift4OptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.handlebars.StringHelpersTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.handlebars.StringHelpersTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.CamelCaseLambdaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.CamelCaseLambdaTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.IndentedLambdaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.IndentedLambdaTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.LowercaseLambdaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.LowercaseLambdaTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.OnChangeLambdaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.OnChangeLambdaTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.TitlecaseLambdaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.TitlecaseLambdaTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.UppercaseLambdaTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.templating.mustache.UppercaseLambdaTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.aurelia.TypeScriptAureliaClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.aurelia.TypeScriptAureliaClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.fetch.TypeScriptFetchClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.fetch.TypeScriptFetchClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.fetch.TypeScriptFetchClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.fetch.TypeScriptFetchClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.fetch.TypeScriptFetchModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.fetch.TypeScriptFetchModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangular.TypeScriptAngularClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangular.TypeScriptAngularClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangular.TypeScriptAngularClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangular.TypeScriptAngularClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangular.TypeScriptAngularModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangular.TypeScriptAngularModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangular.TypescriptAngularApiVersionTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangular.TypescriptAngularApiVersionTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangularjs.TypeScriptAngularJsClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangularjs.TypeScriptAngularJsClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangularjs.TypeScriptAngularJsModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptangularjs.TypeScriptAngularJsModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptnode.TypeScriptNodeClientCodegenTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptnode.TypeScriptNodeClientCodegenTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptnode.TypeScriptNodeClientOptionsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptnode.TypeScriptNodeClientOptionsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptnode.TypeScriptNodeModelTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.typescript.typescriptnode.TypeScriptNodeModelTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.utils.JsonCacheTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.utils.JsonCacheTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.utils.ModelUtilsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.utils.ModelUtilsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.utils.StringUtilsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.utils.StringUtilsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.utils.URLPathUtilsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.utils.URLPathUtilsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.yaml.YamlGeneratorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/junitreports/TEST-org.openapitools.codegen.yaml.YamlGeneratorTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/old/Surefire suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/old/Surefire suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/old/Surefire suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/openapi-generator/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/out/my-codegen/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/out/my-codegen/client.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/out/my-codegen/resourceTest.go" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/out/my-codegen/resourceTest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/help.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/out/my-codegen/resource.go" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/out/my-codegen/resource.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfClient.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfClient.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResourceTest.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResourceTest.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/my-codegen-openapi-generator-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/my-codegen-openapi-generator-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/surefire-reports/TEST-com.tkao.codegen.MyCodegenGeneratorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/surefire-reports/TEST-com.tkao.codegen.MyCodegenGeneratorTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/surefire-reports/com.tkao.codegen.MyCodegenGeneratorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/surefire-reports/com.tkao.codegen.MyCodegenGeneratorTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/role.yml" beforeDir="false" afterPath="$PROJECT_DIR$/role.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/openapitools/api/FolderManagementApi.sample" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/openapitools/api/FolderManagementApi.sample" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/openapitools/api/UserManagementApi.sample" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/openapitools/api/UserManagementApi.sample" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/openapitools/model/User.sample" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/openapitools/model/User.sample" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource.go" beforeDir="false" afterPath="$PROJECT_DIR$/resource.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -212,7 +44,7 @@
         <counts>
           <entry key="CodegenConfig" value="1" />
           <entry key="Vagrantfile" value="1" />
-          <entry key="go" value="24" />
+          <entry key="go" value="26" />
           <entry key="java" value="28" />
           <entry key="md" value="1" />
           <entry key="mustache" value="17" />
@@ -225,7 +57,7 @@
         <counts>
           <entry key="Handlebars/Mustache" value="17" />
           <entry key="JAVA" value="28" />
-          <entry key="PLAIN_TEXT" value="33" />
+          <entry key="PLAIN_TEXT" value="35" />
           <entry key="SPI" value="1" />
           <entry key="XML" value="16" />
           <entry key="YAML" value="14" />
@@ -235,18 +67,18 @@
         <counts>
           <entry key="go" value="1" />
           <entry key="java" value="580" />
-          <entry key="mustache" value="5544" />
+          <entry key="mustache" value="5721" />
           <entry key="xml" value="42" />
-          <entry key="yml" value="1019" />
+          <entry key="yml" value="1057" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Handlebars/Mustache" value="5544" />
+          <entry key="Handlebars/Mustache" value="5721" />
           <entry key="JAVA" value="580" />
           <entry key="PLAIN_TEXT" value="163" />
           <entry key="XML" value="42" />
-          <entry key="YAML" value="857" />
+          <entry key="YAML" value="895" />
         </counts>
       </usages-collector>
     </session>
@@ -256,8 +88,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="59" />
+            <state relative-caret-position="556">
+              <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1050">
+              <caret line="70" column="9" lean-forward="true" selection-end-line="84" />
             </state>
           </provider>
         </entry>
@@ -265,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="358" column="25" selection-start-line="358" selection-start-column="25" selection-end-line="358" selection-end-column="25" />
+            <state relative-caret-position="206">
+              <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -274,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-191">
-              <caret line="254" column="28" selection-start-line="254" selection-start-column="28" selection-end-line="254" selection-end-column="28" />
+            <state relative-caret-position="229">
+              <caret line="282" column="35" selection-start-line="282" selection-start-column="35" selection-end-line="282" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -283,35 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="189" column="71" selection-start-line="189" selection-start-column="71" selection-end-line="189" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resourceTest.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="47" column="20" lean-forward="true" selection-end-line="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resource.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-496">
-              <caret line="19" column="40" lean-forward="true" selection-end-line="137" />
+            <state relative-caret-position="282">
+              <caret line="193" column="48" selection-end-line="215" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -319,8 +133,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="208" />
+            <state relative-caret-position="-1473">
+              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resource.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -336,7 +159,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pet</find>
       <find>role</find>
       <find>tfResource</find>
       <find>lower</find>
@@ -362,10 +184,11 @@
       <find>camelcase</find>
       <find>user</find>
       <find>UserUpdate</find>
-      <find>x-tf</find>
-      <find>readonly</find>
-      <find>name</find>
       <find>classname</find>
+      <find>name</find>
+      <find>readonly</find>
+      <find>x-tf</find>
+      <find>path</find>
     </findStrings>
     <replaceStrings>
       <replace>{{returnType}}</replace>
@@ -373,8 +196,8 @@
       <replace>{{tags.x-tf-resourceName}}</replace>
       <replace>{{#lambda.lowercase}}{{tags.x-tf-resourceName}}{{/lambda.lowercase}}</replace>
       <replace>name</replace>
-      <replace>vendorExtensions.x-tf-resourceName</replace>
       <replace>vendorExtensions.x-tf-object</replace>
+      <replace>vendorExtensions.x-tf-resourceName</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -409,13 +232,13 @@
         <option value="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfResource.mustache" />
         <option value="$PROJECT_DIR$/folder-management.yml" />
         <option value="$PROJECT_DIR$/generic-models.yml" />
-        <option value="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache" />
         <option value="$PROJECT_DIR$/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java" />
         <option value="$PROJECT_DIR$/resourceTest.go" />
-        <option value="$PROJECT_DIR$/user.yml" />
         <option value="$PROJECT_DIR$/role.yml" />
-        <option value="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache" />
         <option value="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache" />
+        <option value="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache" />
+        <option value="$PROJECT_DIR$/user.yml" />
+        <option value="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache" />
       </list>
     </option>
   </component>
@@ -670,8 +493,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="client.&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;default&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java&#10;resource&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/resource.go&#10;resource.go&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/resourceTest.go&#10;client.go&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;tfResource&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache&#10;defaul&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java&#10;lambda&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/modules/openapi-generator/src/main/java/org/openapitools/codegen/templating/mustache/JoinWithCommaLambda.java&#10;tfre&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache&#10;myc&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/java/com/tkao/codegen/MyCodegenGenerator.java&#10;client&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;swaggercodegen&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/docs/migration-from-swagger-codegen.md&#10;tf&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache&#10;mycodegengenerator&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/test/java/com/tkao/codegen/MyCodegenGeneratorTest.java&#10;tfresource&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/resources/my-codegen/tfResource.mustache" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569970486935" />
+    <property name="SearchEverywhereHistoryKey" value="client.g&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;resource&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/resource.go&#10;client.&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;default&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java&#10;resource.go&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/resourceTest.go&#10;client.go&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;tfResource&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache&#10;defaul&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java&#10;lambda&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/modules/openapi-generator/src/main/java/org/openapitools/codegen/templating/mustache/JoinWithCommaLambda.java&#10;tfre&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache&#10;myc&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/java/com/tkao/codegen/MyCodegenGenerator.java&#10;client&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;swaggercodegen&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/docs/migration-from-swagger-codegen.md&#10;tf&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache&#10;mycodegengenerator&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/test/java/com/tkao/codegen/MyCodegenGeneratorTest.java&#10;tfresource&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/resources/my-codegen/tfResource.mustache" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570036536122" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -984,27 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="358" column="25" selection-start-line="358" selection-start-column="25" selection-end-line="358" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/role.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret line="254" column="28" selection-start-line="254" selection-start-column="28" selection-end-line="254" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -1012,38 +814,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache">
+    <entry file="file://$PROJECT_DIR$/resourceTest.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="208" />
+        <state relative-caret-position="345">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/role.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="282" column="35" selection-start-line="282" selection-start-column="35" selection-end-line="282" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="189" column="71" selection-start-line="189" selection-start-column="71" selection-end-line="189" selection-end-column="71" />
+        <state relative-caret-position="282">
+          <caret line="193" column="48" selection-end-line="215" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resource.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-496">
-          <caret line="19" column="40" lean-forward="true" selection-end-line="137" />
+        <state relative-caret-position="436">
+          <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1473">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="47" column="20" lean-forward="true" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resourceTest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="1050">
+          <caret line="70" column="9" lean-forward="true" selection-end-line="84" />
         </state>
       </provider>
     </entry>

@@ -4,7 +4,6 @@ import (
     "log"
 
     "github.com/hashicorp/terraform/helper/schema"
-    "github.com/hashicorp/terraform/helper/validation"
 )
 
 
@@ -32,7 +31,7 @@ func resourceSumologic{{vendorExtensions.x-tf-object}}() *schema.Resource {
                 ForceNew: false,{{#defaultValue}}{{#lambda.indented_16}}{{#lambda.default}}Default: {{defaultValue}}{{/lambda.default}}{{/lambda.indented_16}}{{/defaultValue}}
                 {{#isListContainer}}
                  Elem: &schema.Schema{
-                    Type: schema.Type{{#lambda.titlecase}}{{items.dataType}}{{/lambda.titlecase}}
+                    Type: schema.Type{{#lambda.titlecase}}{{items.dataType}}{{/lambda.titlecase}},
                  },
                 {{/isListContainer}}
             },
@@ -102,7 +101,7 @@ func resourceSumologic{{vendorExtensions.x-tf-object}}Update(d *schema.ResourceD
     return resourceSumologic{{vendorExtensions.x-tf-object}}Read(d, meta)
 }
 
-func resourceSumologic{{vendorExtensions.x-tf-object}}Exists(d *schema.ResourceData, meta interface{}) error {
+func resourceSumologic{{vendorExtensions.x-tf-object}}Exists(d *schema.ResourceData, meta interface{}) (bool, error) {
     c := meta.(*Client)
 
     {{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}}, err := c.Get{{vendorExtensions.x-tf-object}}(d.Id())
@@ -117,16 +116,16 @@ func resourceTo{{vendorExtensions.x-tf-object}}(d *schema.ResourceData) {{vendor
   {{#vars}}
     {{#isListContainer}}
       raw{{nameInCamelCase}} := d.Get("{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}").([]interface{})
-      {{vendorExtensions.x-tf-object}} := make([]{{items.dataType}}, len(raw{{nameInCamelCase}}))
+      {{name}} := make([]{{items.dataType}}, len(raw{{nameInCamelCase}}))
       for i,v := range raw{{nameInCamelCase}} {
-      {{vendorExtensions.x-tf-object}}[i] = v.({{items.dataType}})
+      {{name}}[i] = v.({{items.dataType}})
       }
     {{/isListContainer}}
     {{#isMapContainer}}
       raw{{nameInCamelCase}} := d.Get("{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}").(map[string]interface{})
-      {{vendorExtensions.x-tf-object}} := make(map[string]{{items.dataType}})
+      {{name}} := make(map[string]{{items.dataType}})
       for i,v := range raw{{nameInCamelCase}} {
-      {{vendorExtensions.x-tf-object}}[i] = v.({{items.dataType}})
+      {{name}}[i] = v.({{items.dataType}})
       }
     {{/isMapContainer}}
   {{/vars}}

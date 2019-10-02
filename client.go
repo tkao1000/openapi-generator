@@ -8,31 +8,31 @@ import (
 
 
 func (s *Client) CreateUser(user User) (string, error) {
-    data, err := s.Post("/users", user)
+    data, err := s.Post("v1/users", user)
     if err != nil {
         return "", err
     }
 
-    var user User
-    err = json.Unmarshal(data, &user)
+    var createduser User
+    err = json.Unmarshal(data, &createduser)
     if err != nil {
         return "", err
     }
 
-    return user.id, nil
+    return createduser.ID, nil
 }
 
 
 
 func (s *Client) DeleteUser(id string) error {
-    _, err := s.Delete(fmt.Sprintf("/users/%s", id))
+    _, err := s.Delete(fmt.Sprintf("v1/users/%s", id))
     return err
 }
 
 
 
 func (s *Client) GetUser(id string) (*User, error) {
-   data, _, err := s.Get(fmt.printf("/users/%s", id))
+   data, _, err := s.Get(fmt.Sprintf("v1/users/%s", id))
    if err != nil {
        return nil, err
    }
@@ -59,9 +59,10 @@ func (s *Client) GetUser(id string) (*User, error) {
 
 
 func (s *Client) UpdateUser(user User) error {
-    url := fmt.Sprintf("/users/%s", user.id)
+    url := fmt.Sprintf("v1/users/%s", user.ID)
 
-    user.email = ""
+    user.ID = ""
+    user.Email = ""
 
     _, err := s.Put(url, user)
     return err
@@ -69,6 +70,7 @@ func (s *Client) UpdateUser(user User) error {
 
 // models
 type User struct {
+    ID        string   `json:"id,omitempty"`
     // First name of the user.
     FirstName  string `json:"firstName"`
     // Last name of the user.
@@ -78,5 +80,5 @@ type User struct {
     // List of roleIds associated with the user.
     RoleIds  []string `json:"roleIds"`
     // True if the user is active.
-    IsActive * bool `json:"isActive,omitempty"`
+    IsActive  bool `json:"isActive,omitempty"`
 }

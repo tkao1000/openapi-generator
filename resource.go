@@ -4,7 +4,6 @@ import (
     "log"
 
     "github.com/hashicorp/terraform/helper/schema"
-    "github.com/hashicorp/terraform/helper/validation"
 )
 
 
@@ -36,7 +35,7 @@ func resourceSumologicUser() *schema.Resource {
                 Required: true,
                 ForceNew: false,
                  Elem: &schema.Schema{
-                    Type: schema.TypeString
+                    Type: schema.TypeString,
                  },
             },
             "is_active": {
@@ -108,7 +107,7 @@ func resourceSumologicUserUpdate(d *schema.ResourceData, meta interface{}) error
     return resourceSumologicUserRead(d, meta)
 }
 
-func resourceSumologicUserExists(d *schema.ResourceData, meta interface{}) error {
+func resourceSumologicUserExists(d *schema.ResourceData, meta interface{}) (bool, error) {
     c := meta.(*Client)
 
     user, err := c.GetUser(d.Id())
@@ -121,9 +120,9 @@ func resourceSumologicUserExists(d *schema.ResourceData, meta interface{}) error
 
 func resourceToUser(d *schema.ResourceData) User {
       rawRoleIds := d.Get("role_ids").([]interface{})
-       := make([]string, len(rawRoleIds))
+      roleIds := make([]string, len(rawRoleIds))
       for i,v := range rawRoleIds {
-      [i] = v.(string)
+      roleIds[i] = v.(string)
       }
 
 

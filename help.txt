@@ -217,7 +217,8 @@ Warnings:
             }
           },
           "x-tf-create" : true,
-          "x-tf-resourceName" : "User"
+          "x-tf-resourceName" : "User",
+          "x-tf-path" : "v1/users"
         }
       },
       "users/usersId" : {
@@ -261,7 +262,7 @@ Warnings:
           },
           "x-tf-read" : true,
           "x-tf-resourceName" : "User",
-          "x-tf-path" : "/users/%s"
+          "x-tf-path" : "v1/users/%s"
         },
         "put" : {
           "tags" : [ "userManagement" ],
@@ -314,7 +315,7 @@ Warnings:
           },
           "x-tf-update" : true,
           "x-tf-resourceName" : "User",
-          "x-tf-path" : "/users/%s"
+          "x-tf-path" : "v1/users/%s"
         },
         "delete" : {
           "tags" : [ "userManagement" ],
@@ -359,7 +360,7 @@ Warnings:
           },
           "x-tf-delete" : true,
           "x-tf-resourceName" : "User",
-          "x-tf-path" : "/users/%s"
+          "x-tf-path" : "v1/users/%s"
         }
       }
     },
@@ -11703,6 +11704,7 @@ Warnings:
             "example" : "{\n  \"firstName\" : \"John\",\n  \"lastName\" : \"Doe\",\n  \"roleIds\" : [ \"00000000000001DF\", \"00000000000002D2\" ],\n  \"email\" : \"johndoe@acme.com\"\n}"
           } ],
           "vendorExtensions" : {
+            "x-tf-path" : "v1/users",
             "x-tf-resourceName" : "User",
             "x-tf-create" : true
           },
@@ -11711,21 +11713,21 @@ Warnings:
           "operationIdLowerCase" : "createuser",
           "operationIdCamelCase" : "CreateUser",
           "operationIdSnakeCase" : "create_user",
-          "hasExamples" : true,
-          "hasBodyParam" : true,
-          "hasFormParams" : false,
-          "hasPathParams" : false,
           "hasQueryParams" : false,
-          "hasCookieParams" : false,
-          "hasHeaderParams" : false,
-          "hasResponseHeaders" : false,
-          "bodyAllowed" : true,
           "restfulShow" : false,
           "restfulIndex" : false,
           "restfulCreate" : false,
           "restfulUpdate" : false,
           "restfulDestroy" : false,
-          "restful" : false
+          "restful" : false,
+          "hasExamples" : true,
+          "hasBodyParam" : true,
+          "hasFormParams" : false,
+          "hasPathParams" : false,
+          "hasHeaderParams" : false,
+          "hasCookieParams" : false,
+          "hasResponseHeaders" : false,
+          "bodyAllowed" : true
         }, {
           "responseHeaders" : [ ],
           "hasAuthMethods" : false,
@@ -12135,7 +12137,7 @@ Warnings:
           "callbacks" : [ ],
           "imports" : [ "ErrorResponse" ],
           "vendorExtensions" : {
-            "x-tf-path" : "/users/%s",
+            "x-tf-path" : "v1/users/%s",
             "x-tf-delete" : true,
             "x-tf-resourceName" : "User"
           },
@@ -12144,21 +12146,21 @@ Warnings:
           "operationIdLowerCase" : "deleteuser",
           "operationIdCamelCase" : "DeleteUser",
           "operationIdSnakeCase" : "delete_user",
-          "hasExamples" : false,
-          "hasBodyParam" : false,
-          "hasFormParams" : false,
-          "hasPathParams" : true,
           "hasQueryParams" : true,
-          "hasCookieParams" : false,
-          "hasHeaderParams" : false,
-          "hasResponseHeaders" : false,
-          "bodyAllowed" : false,
           "restfulShow" : false,
           "restfulIndex" : false,
           "restfulCreate" : false,
           "restfulUpdate" : false,
           "restfulDestroy" : false,
-          "restful" : false
+          "restful" : false,
+          "hasExamples" : false,
+          "hasBodyParam" : false,
+          "hasFormParams" : false,
+          "hasPathParams" : true,
+          "hasHeaderParams" : false,
+          "hasCookieParams" : false,
+          "hasResponseHeaders" : false,
+          "bodyAllowed" : false
         }, {
           "responseHeaders" : [ ],
           "hasAuthMethods" : false,
@@ -12436,7 +12438,7 @@ Warnings:
             "statusCode" : "200"
           } ],
           "vendorExtensions" : {
-            "x-tf-path" : "/users/%s",
+            "x-tf-path" : "v1/users/%s",
             "x-tf-read" : true,
             "x-tf-resourceName" : "User"
           },
@@ -12445,21 +12447,21 @@ Warnings:
           "operationIdLowerCase" : "getuser",
           "operationIdCamelCase" : "GetUser",
           "operationIdSnakeCase" : "get_user",
-          "hasExamples" : true,
-          "hasBodyParam" : false,
-          "hasFormParams" : false,
-          "hasPathParams" : true,
           "hasQueryParams" : false,
-          "hasCookieParams" : false,
-          "hasHeaderParams" : false,
-          "hasResponseHeaders" : false,
-          "bodyAllowed" : false,
           "restfulShow" : false,
           "restfulIndex" : false,
           "restfulCreate" : false,
           "restfulUpdate" : false,
           "restfulDestroy" : false,
-          "restful" : false
+          "restful" : false,
+          "hasExamples" : true,
+          "hasBodyParam" : false,
+          "hasFormParams" : false,
+          "hasPathParams" : true,
+          "hasHeaderParams" : false,
+          "hasCookieParams" : false,
+          "hasResponseHeaders" : false,
+          "bodyAllowed" : false
         }, {
           "responseHeaders" : [ ],
           "hasAuthMethods" : false,
@@ -13187,21 +13189,21 @@ Warnings:
           "operationIdLowerCase" : "listusers",
           "operationIdCamelCase" : "ListUsers",
           "operationIdSnakeCase" : "list_users",
-          "hasExamples" : true,
-          "hasBodyParam" : false,
-          "hasFormParams" : false,
-          "hasPathParams" : false,
           "hasQueryParams" : true,
-          "hasCookieParams" : false,
-          "hasHeaderParams" : false,
-          "hasResponseHeaders" : false,
-          "bodyAllowed" : false,
           "restfulShow" : false,
           "restfulIndex" : false,
           "restfulCreate" : false,
           "restfulUpdate" : false,
           "restfulDestroy" : false,
-          "restful" : false
+          "restful" : false,
+          "hasExamples" : true,
+          "hasBodyParam" : false,
+          "hasFormParams" : false,
+          "hasPathParams" : false,
+          "hasHeaderParams" : false,
+          "hasCookieParams" : false,
+          "hasResponseHeaders" : false,
+          "bodyAllowed" : false
         }, {
           "responseHeaders" : [ ],
           "hasAuthMethods" : false,
@@ -13668,7 +13670,7 @@ Warnings:
           } ],
           "vendorExtensions" : {
             "x-tf-update" : true,
-            "x-tf-path" : "/users/%s",
+            "x-tf-path" : "v1/users/%s",
             "x-tf-resourceName" : "User"
           },
           "nickname" : "updateUser",
@@ -13676,21 +13678,21 @@ Warnings:
           "operationIdLowerCase" : "updateuser",
           "operationIdCamelCase" : "UpdateUser",
           "operationIdSnakeCase" : "update_user",
-          "hasExamples" : true,
-          "hasBodyParam" : true,
-          "hasFormParams" : false,
-          "hasPathParams" : true,
           "hasQueryParams" : false,
-          "hasCookieParams" : false,
-          "hasHeaderParams" : false,
-          "hasResponseHeaders" : false,
-          "bodyAllowed" : true,
           "restfulShow" : false,
           "restfulIndex" : false,
           "restfulCreate" : false,
           "restfulUpdate" : false,
           "restfulDestroy" : false,
-          "restful" : false
+          "restful" : false,
+          "hasExamples" : true,
+          "hasBodyParam" : true,
+          "hasFormParams" : false,
+          "hasPathParams" : true,
+          "hasHeaderParams" : false,
+          "hasCookieParams" : false,
+          "hasResponseHeaders" : false,
+          "bodyAllowed" : true
         } ],
         "pathPrefix" : "userManagement"
       },
@@ -13730,7 +13732,7 @@ Warnings:
       "basePath" : "http://localhost",
       "classname" : "UserManagementApi",
       "gitRepoId" : "GIT_REPO_ID",
-      "generatedDate" : "2019-10-01T15:09:38.596-07:00[America/Los_Angeles]",
+      "generatedDate" : "2019-10-02T10:15:51.384-07:00[America/Los_Angeles]",
       "appDescriptionWithNewLines" : "Welcome to the API reference.",
       "gitUserId" : "GIT_USER_ID"
     } ]
@@ -13739,7 +13741,7 @@ Warnings:
   "hasServers" : true,
   "basePath" : "http://localhost",
   "gitRepoId" : "GIT_REPO_ID",
-  "generatedDate" : "2019-10-01T15:09:38.596-07:00[America/Los_Angeles]",
+  "generatedDate" : "2019-10-02T10:15:51.384-07:00[America/Los_Angeles]",
   "appDescriptionWithNewLines" : "Welcome to the API reference.",
   "gitUserId" : "GIT_USER_ID"
 }

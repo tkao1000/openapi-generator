@@ -70,6 +70,7 @@ paths:
     post:
       x-tf-create: true
       x-tf-resourceName: User
+      x-tf-path: v1/users
       summary: Create a new user.
       description: Create a new user in the organization.
       operationId: createUser
@@ -102,7 +103,7 @@ paths:
     get:
       x-tf-read: true
       x-tf-resourceName: User
-      x-tf-path: /users/%s
+      x-tf-path: v1/users/%s
       summary: Get a user.
       description: Get a user with the given identifier from the organization.
       operationId: getUser
@@ -131,7 +132,7 @@ paths:
     put:
       x-tf-update: true
       x-tf-resourceName: User
-      x-tf-path: /users/%s
+      x-tf-path: v1/users/%s
       summary: Update a user.
       description: >-
         Update an existing user in the organization.
@@ -168,7 +169,7 @@ paths:
     delete:
       x-tf-delete: true
       x-tf-resourceName: User
-      x-tf-path: /users/%s
+      x-tf-path: v1/users/%s
       summary: Delete a user.
       description: >-
         Delete a user with the given identifier from the organization and transfer their content to the user with the

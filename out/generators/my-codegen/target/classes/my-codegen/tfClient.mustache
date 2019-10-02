@@ -10,7 +10,7 @@ import (
 {{#apiInfo}}{{#apis}}{{#operations}}{{#operation}}
 {{#vendorExtensions.x-tf-read}}
 func (s *Client) Get{{vendorExtensions.x-tf-resourceName}}(id string) (*{{vendorExtensions.x-tf-resourceName}}, error) {
-   data, _, err := s.Get(fmt.printf("{{vendorExtensions.x-tf-path}}", id))
+   data, _, err := s.Get(fmt.Sprintf("{{vendorExtensions.x-tf-path}}", id))
    if err != nil {
        return nil, err
    }
@@ -36,31 +36,32 @@ func (s *Client) Delete{{vendorExtensions.x-tf-resourceName}}(id string) error {
 
 {{#vendorExtensions.x-tf-create}}
 func (s *Client) Create{{vendorExtensions.x-tf-resourceName}}({{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}} {{vendorExtensions.x-tf-resourceName}}) (string, error) {
-    data, err := s.Post("{{path}}", {{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}})
+    data, err := s.Post("{{vendorExtensions.x-tf-path}}", {{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}})
     if err != nil {
         return "", err
     }
 
-    var {{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}} {{{vendorExtensions.x-tf-resourceName}}}
-    err = json.Unmarshal(data, &{{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}})
+    var created{{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}} {{{vendorExtensions.x-tf-resourceName}}}
+    err = json.Unmarshal(data, &created{{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}})
     if err != nil {
         return "", err
     }
 
-    return {{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}}.id, nil
+    return created{{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}}.ID, nil
 }
 {{/vendorExtensions.x-tf-create}}
 
 {{#vendorExtensions.x-tf-update}}
 func (s *Client) Update{{vendorExtensions.x-tf-resourceName}}({{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}} {{vendorExtensions.x-tf-resourceName}}) error {
-    url := fmt.Sprintf("{{vendorExtensions.x-tf-path}}", {{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}}.id)
+    url := fmt.Sprintf("{{vendorExtensions.x-tf-path}}", {{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}}.ID)
 
 {{#models}}
 {{#model}}
 {{#vendorExtensions.x-tf-resource}}
+    {{#lambda.camelcase}}{{classname}}{{/lambda.camelcase}}.ID = ""
     {{#vars}}
     {{#vendorExtensions.x-tf-resource-writeonly}}
-    {{#lambda.camelcase}}{{classname}}{{/lambda.camelcase}}.{{baseName}} = ""
+    {{#lambda.camelcase}}{{classname}}{{/lambda.camelcase}}.{{nameInCamelCase}} = ""
     {{/vendorExtensions.x-tf-resource-writeonly}}
     {{/vars}}
 {{/vendorExtensions.x-tf-resource}}
@@ -86,12 +87,13 @@ type {{vendorExtensions.x-tf-resourceName}} struct {
       {{/operations}}
     {{/apis}}
   {{/apiInfo}}
+    ID        string   `json:"id,omitempty"`
 {{#vars}}
   {{^vendorExtensions.x-tf-resource-readonly}}
     {{#description}}
     // {{{description}}}
     {{/description}}
-    {{nameInCamelCase}} {{^isEnum}}{{^isPrimitiveType}}{{^isContainer}}{{^isDateTime}}*{{/isDateTime}}{{/isContainer}}{{/isPrimitiveType}}{{/isEnum}} {{dataType}}{{#isListContainer}}{{items.dataType}}{{/isListContainer}}{{#isMapContainer}}{{items.dataType}}{{/isMapContainer}} `json:"{{baseName}}{{^required}},omitempty{{/required}}"{{#withXml}} xml:"{{baseName}}"{{/withXml}}`
+    {{nameInCamelCase}} {{^isEnum}}{{^isPrimitiveType}}{{^isContainer}}{{^isDateTime}}{{^isBoolean}}*{{/isBoolean}}{{/isDateTime}}{{/isContainer}}{{/isPrimitiveType}}{{/isEnum}} {{dataType}}{{#isListContainer}}{{items.dataType}}{{/isListContainer}}{{#isMapContainer}}{{items.dataType}}{{/isMapContainer}} `json:"{{baseName}}{{^required}},omitempty{{/required}}"{{#withXml}} xml:"{{baseName}}"{{/withXml}}`
   {{/vendorExtensions.x-tf-resource-readonly}}
   {{/vars}}
 }
