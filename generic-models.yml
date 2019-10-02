@@ -9,18 +9,22 @@ components:
       - modifiedBy
       properties:
         createdAt:
+          x-tf-resource-readonly: true
           description: >-
             Creation timestamp in UTC in [RFC3339](https://tools.ietf.org/html/rfc3339) format.
           type: string
           format: dateTime
         createdBy:
+          x-tf-resource-readonly: true
           description: Identifier of the user who created the resource.
           type: string
         modifiedAt:
+          x-tf-resource-readonly: true
           description: Last modification timestamp in UTC.
           type: string
           format: dateTime
         modifiedBy:
+          x-tf-resource-readonly: true
           description: Identifier of the user who last modified the resource.
           type: string
 
@@ -33,21 +37,25 @@ components:
       - modifiedBy
       properties:
         createdAt:
+          x-tf-resource-readonly: true
           description: >-
             Creation timestamp in UTC in [RFC3339](https://tools.ietf.org/html/rfc3339) format.
           type: string
           format: date-time
           example: 2018-10-16T09:10:00Z
         createdBy:
+          x-tf-resource-readonly: true
           description: Identifier of the user who created the resource.
           type: string
           example: 0000000006743FDD
         modifiedAt:
+          x-tf-resource-readonly: true
           description: Last modification timestamp in UTC.
           type: string
           format: date-time
           example: 2018-10-16T09:10:00Z
         modifiedBy:
+          x-tf-resource-readonly: true
           description: Identifier of the user who last modified the resource.
           type: string
           example: 0000000006743FE8

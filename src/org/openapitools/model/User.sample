@@ -13,5 +13,6 @@ package
       id string `json:"id"`
       isActive boolean `json:"isActive"`
       isLocked boolean `json:"isLocked"`
+      isMfaEnabled boolean `json:"isMfaEnabled"`
       lastLoginTimestamp DateTime `json:"lastLoginTimestamp"`
     }

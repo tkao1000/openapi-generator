@@ -1,0 +1,6 @@
+package 
+
+// ---------- TYPES ----------
+    type ChangeEmailRequest struct {
+      email string `json:"email"`
+    }

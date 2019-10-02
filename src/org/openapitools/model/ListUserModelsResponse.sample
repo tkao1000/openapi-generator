@@ -1,0 +1,7 @@
+package 
+
+// ---------- TYPES ----------
+    type ListUserModelsResponse struct {
+      data array `json:"data"`
+      next string `json:"next"`
+    }

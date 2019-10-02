@@ -13,10 +13,10 @@ import (
 {{#vendorExtensions.x-tf-resource}}
 func resourceSumologic{{vendorExtensions.x-tf-object}}() *schema.Resource {
     return &schema.Resource{
-        Create: resourceSumologic{{name}}Create,
-        Read:   resourceSumologic{{name}}Read,
-        Update: resourceSumologic{{name}}Update,
-        Delete: resourceSumologic{{name}}Delete,
+        Create: resourceSumologic{{vendorExtensions.x-tf-object}}Create,
+        Read:   resourceSumologic{{vendorExtensions.x-tf-object}}Read,
+        Update: resourceSumologic{{vendorExtensions.x-tf-object}}Update,
+        Delete: resourceSumologic{{vendorExtensions.x-tf-object}}Delete,
 
         Schema: map[string]*schema.Schema{
         {{#vars}}
@@ -32,7 +32,7 @@ func resourceSumologic{{vendorExtensions.x-tf-object}}() *schema.Resource {
                 ForceNew: false,{{#defaultValue}}{{#lambda.indented_16}}{{#lambda.default}}Default: {{defaultValue}}{{/lambda.default}}{{/lambda.indented_16}}{{/defaultValue}}
                 {{#isListContainer}}
                  Elem: &schema.Schema{
-                    Type: schema.Type{{{items.dataType}}}
+                    Type: schema.Type{{#lambda.titlecase}}{{items.dataType}}{{/lambda.titlecase}}
                  },
                 {{/isListContainer}}
             },
@@ -42,42 +42,42 @@ func resourceSumologic{{vendorExtensions.x-tf-object}}() *schema.Resource {
     }
 }
 
-func resourceSumologic{{name}}Read(d *schema.ResourceData, meta interface{}) error {
+func resourceSumologic{{vendorExtensions.x-tf-object}}Read(d *schema.ResourceData, meta interface{}) error {
     c := meta.(*Client)
 
     id := d.Id()
-    {{#lambda.lowercase}}{{name}}{{/lambda.lowercase}}, err := c.Get{{name}}(id)
+    {{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}}, err := c.Get{{vendorExtensions.x-tf-object}}(id)
 
     if (err != nil) {
         return err
     }
 
-    if ({{#lambda.lowercase}}{{name}}{{/lambda.lowercase}} == nil) {
-        log.Printf("[WARN] {{name}} not found, removing from state: %v - %v", id, err)
+    if ({{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}} == nil) {
+        log.Printf("[WARN] {{vendorExtensions.x-tf-object}} not found, removing from state: %v - %v", id, err)
         d.SetId("")
         return nil
     }
 
     {{#vars}}
       {{^vendorExtensions.x-tf-resource-readonly}}
-    d.Set("{{name}}", user.{{nameInCamelCase}})
+    d.Set("{{name}}", {{#lambda.lowercase}}{{#models}}{{#model}}{{#vendorExtensions.x-tf-resource}}{{vendorExtensions.x-tf-object}}{{/vendorExtensions.x-tf-resource}}{{/model}}{{/models}}{{/lambda.lowercase}}.{{nameInCamelCase}})
     {{/vendorExtensions.x-tf-resource-readonly}}
     {{/vars}}
 
     return nil
 }
 
-func resourceSumologic{{name}}Delete(d *schema.ResourceData, meta interface{}) error {
+func resourceSumologic{{vendorExtensions.x-tf-object}}Delete(d *schema.ResourceData, meta interface{}) error {
     c := meta.(*Client)
-    return c.Delete{{name}}(d.Id())
+    return c.Delete{{vendorExtensions.x-tf-object}}(d.Id())
 }
 
-func resourceSumologic{{name}}Create(d *schema.ResourceData, meta interface{}) error {
+func resourceSumologic{{vendorExtensions.x-tf-object}}Create(d *schema.ResourceData, meta interface{}) error {
     c := meta.(*Client)
 
     if (d.Id() == "") {
-        {{#lambda.lowercase}}{{name}}{{/lambda.lowercase}} := resourceTo{{name}}(d)
-        id, err := c.Create{{name}}({{#lambda.lowercase}}{{name}}{{/lambda.lowercase}})
+        {{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}} := resourceTo{{vendorExtensions.x-tf-object}}(d)
+        id, err := c.Create{{vendorExtensions.x-tf-object}}({{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}})
 
         if err != nil {
             return err
@@ -86,53 +86,53 @@ func resourceSumologic{{name}}Create(d *schema.ResourceData, meta interface{}) e
         d.SetId(id)
     }
 
-    return resourceSumologic{{name}}Read(d, meta)
+    return resourceSumologic{{vendorExtensions.x-tf-object}}Read(d, meta)
 }
 
-func resourceSumologic{{name}}Update(d *schema.ResourceData, meta interface{}) error {
+func resourceSumologic{{vendorExtensions.x-tf-object}}Update(d *schema.ResourceData, meta interface{}) error {
     c := meta.(*Client)
 
-    {{#lambda.lowercase}}{{name}}{{/lambda.lowercase}} := resourceTo{{name}}(d)
-    err := c.Update{{name}}(user)
+    {{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}} := resourceTo{{vendorExtensions.x-tf-object}}(d)
+    err := c.Update{{vendorExtensions.x-tf-object}}(user)
 
     if err != nil {
         return err
     }
 
-    return resourceSumologic{{name}}Read(d, meta)
+    return resourceSumologic{{vendorExtensions.x-tf-object}}Read(d, meta)
 }
 
-func resourceSumologic{{name}}Exists(d *schema.ResourceData, meta interface{}) error {
+func resourceSumologic{{vendorExtensions.x-tf-object}}Exists(d *schema.ResourceData, meta interface{}) error {
     c := meta.(*Client)
 
-    {{#lambda.lowercase}}{{name}}{{/lambda.lowercase}}, err := c.Get{{name}}(d.Id())
+    {{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}}, err := c.Get{{vendorExtensions.x-tf-object}}(d.Id())
     if err != nil {
         return false, err
     }
 
-    return {{#lambda.lowercase}}{{name}}{{/lambda.lowercase}} != nil, nil
+    return {{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}} != nil, nil
 }
 
-func resourceTo{{name}}(d *schema.ResourceData) {{name}} {
+func resourceTo{{vendorExtensions.x-tf-object}}(d *schema.ResourceData) {{vendorExtensions.x-tf-object}} {
   {{#vars}}
     {{#isListContainer}}
       raw{{nameInCamelCase}} := d.Get("{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}").([]interface{})
-      {{name}} := make([]{{items.dataType}}, len(raw{{nameInCamelCase}}))
+      {{vendorExtensions.x-tf-object}} := make([]{{items.dataType}}, len(raw{{nameInCamelCase}}))
       for i,v := range raw{{nameInCamelCase}} {
-      {{name}}[i] = v.({{items.dataType}})
+      {{vendorExtensions.x-tf-object}}[i] = v.({{items.dataType}})
       }
     {{/isListContainer}}
     {{#isMapContainer}}
       raw{{nameInCamelCase}} := d.Get("{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}").(map[string]interface{})
-      {{name}} := make(map[string]{{items.dataType}})
+      {{vendorExtensions.x-tf-object}} := make(map[string]{{items.dataType}})
       for i,v := range raw{{nameInCamelCase}} {
-      {{name}}[i] = v.({{items.dataType}})
+      {{vendorExtensions.x-tf-object}}[i] = v.({{items.dataType}})
       }
     {{/isMapContainer}}
   {{/vars}}
 
 
-  return {{name}}{
+  return {{vendorExtensions.x-tf-object}}{
     {{#vars}}
       {{^vendorExtensions.x-tf-resource-readonly}}
       {{nameInCamelCase}}: {{^isListContainer}}d.Get("{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}").({{dataType}}){{/isListContainer}}{{#isListContainer}}{{name}}{{/isListContainer}},

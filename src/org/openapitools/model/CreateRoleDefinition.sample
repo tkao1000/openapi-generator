@@ -1,0 +1,10 @@
+package 
+
+// ---------- TYPES ----------
+    type CreateRoleDefinition struct {
+      name string `json:"name"`
+      description string `json:"description"`
+      filterPredicate string `json:"filterPredicate"`
+      users array `json:"users"`
+      capabilities array `json:"capabilities"`
+    }
