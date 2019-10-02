@@ -7,10 +7,19 @@ import (
     "{{import}}"
 {{/imports}}
 )
-{{#apiInfo}}{{#apis}}{{#operations}}{{#operation}}
-{{#vendorExtensions.x-tf-read}}
-func (s *Client) Get{{vendorExtensions.x-tf-resourceName}}(id string) (*{{vendorExtensions.x-tf-resourceName}}, error) {
-   data, _, err := s.Get(fmt.printf("{{vendorExtensions.x-tf-path}}", id))
+
+// operations
+{{#apiInfo}}
+{{#apis}}
+{{#operations}}
+{{#operation}}
+{{#vendorExtensions.x-tf-create}}
+// {{nickname}}
+//func (s *Client) {{nickname}}({{#allParams}}{{#required}}{{paramName}} {{{dataType}}}{{#hasMore}}, {{/hasMore}}{{/required}}{{/allParams}}) ({{#returnType}}{{{returnType}}}, {{/returnType}}*http.Response, error) {
+//}
+
+func (s *Client) Get{{returnType}}(id string) (*{{returnType}}, error) {
+   data, _, err := s.Get(fmt.printf("{{path}}/%s", id))
    if err != nil {
        return nil, err
    }
@@ -18,46 +27,46 @@ func (s *Client) Get{{vendorExtensions.x-tf-resourceName}}(id string) (*{{vendor
        return nil, nil
    }
 
-   var {{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}} {{{vendorExtensions.x-tf-resourceName}}}
-   err = json.Unmarshal(data, &{{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}})
+   var {{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}} {{{returnType}}}
+   err = json.Unmarshal(data, &{{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}})
    if err != nil {
        return nil, err
    }
-   return &{{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}}, nil
+   return &{{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}}, nil
 }
-{{/vendorExtensions.x-tf-read}}
 
-{{#vendorExtensions.x-tf-delete}}
-func (s *Client) Delete{{vendorExtensions.x-tf-resourceName}}(id string) error {
-    _, err := s.Delete(fmt.Sprintf("{{vendorExtensions.x-tf-path}}", id))
+func (s *Client) Delete{{returnType}}(id string) error {
+    _, err := s.Delete(fmt.Sprintf("{{path}}/%s", id))
     return err
 }
-{{/vendorExtensions.x-tf-delete}}
 
-{{#vendorExtensions.x-tf-create}}
-func (s *Client) Create{{vendorExtensions.x-tf-resourceName}}({{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}} {{vendorExtensions.x-tf-resourceName}}) (string, error) {
-    data, err := s.Post("{{path}}", {{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}})
+func (s *Client) Create{{returnType}}({{#lambda.camelcase}}{{returnType}}{{/lambda.camelcase}} {{returnType}}) (string, error) {
+    data, err := s.Post("{{path}}", {{#lambda.camelcase}}{{returnType}}{{/lambda.camelcase}})
     if err != nil {
         return "", err
     }
 
-    var {{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}} {{{vendorExtensions.x-tf-resourceName}}}
-    err = json.Unmarshal(data, &{{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}})
+    var {{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}} {{{returnType}}}
+    err = json.Unmarshal(data, &{{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}})
     if err != nil {
         return "", err
     }
 
-    return {{#lambda.camelcase}}{{{vendorExtensions.x-tf-resourceName}}}{{/lambda.camelcase}}.id, nil
+    return {{#lambda.camelcase}}{{{returnType}}}{{/lambda.camelcase}}.id, nil
 }
-{{/vendorExtensions.x-tf-create}}
 
-{{#vendorExtensions.x-tf-update}}
-func (s *Client) Update{{vendorExtensions.x-tf-resourceName}}({{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}} {{vendorExtensions.x-tf-resourceName}}) error {
-    url := fmt.Sprintf("{{vendorExtensions.x-tf-path}}", {{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}}.id)
+func (s *Client) Update{{returnType}}({{#lambda.camelcase}}{{returnType}}{{/lambda.camelcase}} {{returnType}}) error {
+    url := fmt.Sprintf("{{path}}/%s", {{#lambda.camelcase}}{{returnType}}{{/lambda.camelcase}}.id)
+{{/vendorExtensions.x-tf-create}}
+{{/operation}}
+{{/operations}}
+{{/apis}}
+{{/apiInfo}}
 
 {{#models}}
 {{#model}}
 {{#vendorExtensions.x-tf-resource}}
+    // TODO: How to identify readonly and writeonly fields
     {{#vars}}
     {{#vendorExtensions.x-tf-resource-writeonly}}
     {{#lambda.camelcase}}{{classname}}{{/lambda.camelcase}}.{{baseName}} = ""
@@ -67,10 +76,20 @@ func (s *Client) Update{{vendorExtensions.x-tf-resourceName}}({{#lambda.camelcas
 {{/model}}
 {{/models}}
 
-    _, err := s.Put(url, {{#lambda.camelcase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.camelcase}})
+{{#apiInfo}}
+{{#apis}}
+{{#operations}}
+{{#operation}}
+{{#vendorExtensions.x-tf-create}}
+    _, err := s.Put(url, {{#lambda.camelcase}}{{returnType}}{{/lambda.camelcase}})
     return err
 }
-{{/vendorExtensions.x-tf-update}}{{/operation}}{{/operations}}{{/apis}}{{/apiInfo}}
+{{/vendorExtensions.x-tf-create}}
+{{/operation}}
+{{/operations}}
+{{/apis}}
+{{/apiInfo}}
+
 // models
 {{#models}}
 {{#model}}
@@ -80,7 +99,7 @@ func (s *Client) Update{{vendorExtensions.x-tf-resourceName}}({{#lambda.camelcas
       {{#operations}}
         {{#operation}}
           {{#vendorExtensions.x-tf-create}}
-type {{vendorExtensions.x-tf-resourceName}} struct {
+type {{returnType}} struct {
           {{/vendorExtensions.x-tf-create}}
         {{/operation}}
       {{/operations}}

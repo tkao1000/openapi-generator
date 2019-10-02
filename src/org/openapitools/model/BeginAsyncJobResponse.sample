@@ -1,6 +1,0 @@
-package 
-
-// ---------- TYPES ----------
-    type BeginAsyncJobResponse struct {
-      id string `json:"id"`
-    }

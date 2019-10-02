@@ -1,8 +1,0 @@
-package 
-
-// ---------- TYPES ----------
-    type AsyncJobStatus struct {
-      status string `json:"status"`
-      statusMessage string `json:"statusMessage"`
-      error ErrorDescription `json:"error"`
-    }

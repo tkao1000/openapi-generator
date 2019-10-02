@@ -9,110 +9,46 @@ tags:
 - name: userManagement
   description: User management API
 paths:
-  # /users endpoint
-  users:
-    get:
-      summary: Get a list of users.
-      description: >-
-        Get a list of all users in the organization. The response is paginated with a default limit of 100 users per
-        page.
-      operationId: listUsers
+  /v1beta/users:
+    post:
       tags:
       - userManagement
-      parameters:
-      - name: limit
-        description: >-
-          Limit the number of users returned in the response. The number of users returned may be less than the `limit`.
-        required: false
-        in: query
-        schema:
-          default: 100
-          minimum: 1
-          type: integer
-          maximum: 1000
-          format: int32
-      - name: token
-        description: >-
-          Continuation token to get the next page of results. A page object with the next continuation token is returned
-          in the response body. Subsequent GET requests should specify the continuation token to get the next page of
-          results. `token` is set to null when no more pages are left.
-        required: false
-        in: query
-        schema:
-          type: string
-      - name: sortBy
-        description: >-
-          Sort the list of users by the `firstName`, `lastName`, or `email` field.
-        required: false
-        in: query
-        schema:
-          type: string
-      - name: email
-        description: Find user with the given email address.
-        required: false
-        in: query
-        schema:
-          minLength: 1
-          type: string
-      responses:
-        200:
-          description: A paginated list of users in the organization.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ListUserModelsResponse'
-        default:
-          description: Operation failed with an error.
-          content:
-            application/json:
-              schema:
-                $ref: './generic-responses.yml#/components/schemas/ErrorResponse'
-    post:
       x-tf-create: true
-      x-tf-resourceName: User
       summary: Create a new user.
       description: Create a new user in the organization.
       operationId: createUser
-      tags:
-      - userManagement
-      parameters: []
       requestBody:
         description: Information about the new user.
-        required: true
         content:
           application/json:
             schema:
               $ref: '#/components/schemas/CreateUserDefinition'
+        required: true
       responses:
         200:
           description: The user has been created.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/UserModel'
+                $ref: '#/components/schemas/User'
         default:
           description: Operation failed with an error.
           content:
             application/json:
               schema:
-                $ref: './generic-responses.yml#/components/schemas/ErrorResponse'
-
-  # /users/{id} endpoint
-  users/usersId:
+                $ref: '#/components/schemas/ErrorResponse'
+  /v1beta/users/{id}:
     get:
-      x-tf-read: true
-      x-tf-resourceName: User
-      x-tf-path: /users/%s
+      tags:
+      - userManagement
       summary: Get a user.
       description: Get a user with the given identifier from the organization.
       operationId: getUser
-      tags:
-      - userManagement
       parameters:
       - name: id
+        in: path
         description: Identifier of user to return.
         required: true
-        in: path
         schema:
           type: string
       responses:
@@ -121,299 +57,245 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/UserModel'
+                $ref: '#/components/schemas/User'
         default:
           description: Operation failed with an error.
           content:
             application/json:
               schema:
-                $ref: './generic-responses.yml#/components/schemas/ErrorResponse'
+                $ref: '#/components/schemas/ErrorResponse'
     put:
-      x-tf-update: true
-      x-tf-resourceName: User
-      x-tf-path: /users/%s
-      summary: Update a user.
-      description: >-
-        Update an existing user in the organization.
-      operationId: updateUser
       tags:
       - userManagement
+      summary: Update a user.
+      description: |
+        Update an existing user in the organization.
+      operationId: updateUser
       parameters:
       - name: id
+        in: path
         description: Identifier of the user to update.
         required: true
-        in: path
         schema:
           type: string
       requestBody:
         description: Information to update about the user.
-        required: true
         content:
           application/json:
             schema:
               $ref: '#/components/schemas/UpdateUserDefinition'
+        required: true
       responses:
         200:
           description: The user was successfully modified.
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/UserModel'
+                $ref: '#/components/schemas/User'
         default:
           description: Operation failed with an error.
           content:
             application/json:
               schema:
-                $ref: './generic-responses.yml#/components/schemas/ErrorResponse'
+                $ref: '#/components/schemas/ErrorResponse'
     delete:
-      x-tf-delete: true
-      x-tf-resourceName: User
-      x-tf-path: /users/%s
-      summary: Delete a user.
-      description: >-
-        Delete a user with the given identifier from the organization and transfer their content to the user with the
-        identifier specified in "transferTo". If "transferTo" is not specified the contents are deleted.
-      operationId: deleteUser
       tags:
       - userManagement
+      summary: Delete a user.
+      description: |
+        Delete a user with the given identifier from the organization and transfer their content to the user with the identifier specified in "transferTo". If "transferTo" is not specified the contents are deleted.
+      operationId: deleteUser
       parameters:
       - name: id
+        in: path
         description: Identifier of the user to delete.
         required: true
-        in: path
         schema:
           type: string
       - name: transferTo
-        description: Identifier of the user to receive the transfer of content from the deleted user.
-        required: false
         in: query
+        description: Identifier of the user to transfer the content from the deleted
+          user.
         schema:
           type: string
       responses:
         204:
           description: User was deleted successfully.
+          content: {}
         default:
           description: Operation failed with an error.
           content:
-            application/json:
+            '*/*':
               schema:
-                $ref: './generic-responses.yml#/components/schemas/ErrorResponse'
-    # /users/{id}/password/reset endpoint.
-    password:
-      reset:
-        post:
-          summary: Reset password.
-          description: Reset a user's password.
-          operationId: resetPassword
-          tags:
-          - userManagement
-          parameters:
-          - name: id
-            description: Identifier of the user to reset password.
-            required: true
-            in: path
-            schema:
-              type: string
-          responses:
-            204:
-              description: User's password was reset successfully.
-            default:
-              description: Operation failed with an error.
-              content:
-                application/json:
-                  schema:
-                    $ref: './generic-responses.yml#/components/schemas/ErrorResponse'
-    unlock:
-      post:
-        summary: Unlock a user.
-        description: Unlock another user's account.
-        operationId: unlockUser
-        tags:
-        - userManagement
-        parameters:
-        - name: id
-          description: The id of the user that needs to be unlocked.
-          required: true
-          in: path
-          schema:
-            type: string
-        responses:
-          204:
-            description: User's account was unlocked successfully.
-          default:
-            description: Operation failed with an error.
-            content:
-              application/json:
-                schema:
-                  $ref: './generic-responses.yml#/components/schemas/ErrorResponse'
-
-    # /users/{id}/email/requestChange endpoint.
-    email:
-      requestChange:
-        post:
-          summary: Change email address.
-          description: >-
-            An email with an activation link is sent to the user’s new email address. The user must click the link in
-            the email within seven days to complete the email address change, or the link will expire.
-          operationId: requestChangeEmail
-          tags:
-          - userManagement
-          parameters:
-          - name: id
-            description: Identifier of the user to change email address.
-            required: true
-            in: path
-            schema:
-              type: string
-          requestBody:
-            description: New email address of the user.
-            required: true
-            content:
-              application/json:
-                schema:
-                  $ref: '#/components/schemas/ChangeEmailRequest'
-          responses:
-            204:
-              description: Email change request was submitted successfully.
-            default:
-              description: Operation failed with an error.
-              content:
-                application/json:
-                  schema:
-                    $ref: './generic-responses.yml#/components/schemas/ErrorResponse'
-
+                $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
     CreateUserDefinition:
-      type: object
       required:
+      - email
       - firstName
       - lastName
-      - email
       - roleIds
+      type: object
       properties:
         firstName:
           x-tfType: TypeString
-          description: First name of the user.
-          type: string
-          example: 'John'
-          minLength: 1
           maxLength: 128
+          minLength: 1
+          type: string
+          description: First name of the user.
+          example: John
         lastName:
           x-tfType: TypeString
-          description: Last name of the user.
-          type: string
-          example: 'Doe'
-          minLength: 0
           maxLength: 128
+          minLength: 0
+          type: string
+          description: Last name of the user.
+          example: Doe
         email:
           x-tfType: TypeString
-          x-tf-resource-writeonly: true
-          description: Email address of the user.
-          type: string
-          format: email
-          example: 'johndoe@acme.com'
           maxLength: 255
+          type: string
+          description: Email address of the user.
+          format: email
+          example: johndoe@acme.com
+          x-tf-resource-writeonly: true
         roleIds:
           x-tfType: TypeList
+          type: array
           description: List of roleIds associated with the user.
-          type: array
           items:
             type: string
-          example:
-          - 00000000000001DF
-          - 00000000000002D2
-    UpdateUserDefinition:
-      type: object
-      required:
-      - firstName
-      - lastName
-      - isActive
-      - roleIds
-      properties:
-        firstName:
-          description: First name of the user.
-          type: string
-          example: 'John'
-          minLength: 1
-          maxLength: 128
-        lastName:
-          description: Last name of the user.
-          type: string
-          example: 'Doe'
-          minLength: 0
-          maxLength: 128
-        isActive:
-          description: This has the value `true` if the user is active and `false` if they have been deactivated.
-          type: boolean
-          example: true
-        roleIds:
-          description: List of role identifiers associated with the user.
-          type: array
-          items:
-            type: string
-          example:
-          - 00000000000001DF
-          - 00000000000002D2
     User:
       x-tf-resource: true
-      x-tf-object: User
-      type: object
       allOf:
       - $ref: '#/components/schemas/CreateUserDefinition'
-      - $ref: './generic-models.yml#/components/schemas/MetadataModel'
+      - $ref: '#/components/schemas/Metadata'
       - required:
         - id
+        type: object
         properties:
           id:
-            description: Unique identifier for the user.
             type: string
-            example: 000000000FE20FE2
+            description: Unique identifier for the user.
             x-tf-resource-readonly: true
           isActive:
-            description: True if the user is active.
             type: boolean
-            example: true
-            x-tfType: TypeBool
+            description: Is the user active.
           isLocked:
-            description: >-
-              This has the value `true` if the user's account has been locked. If a user tries to log into their account
-              several times and fails, his or her account will be locked for security reasons.
             type: boolean
-            example: false
-            x-tf-resource-readonly: true
-          isMfaEnabled:
-            description: True if multi factor authentication is enabled for the user.
-            type: boolean
-            example: false
+            description: Is the user locked.
             x-tf-resource-readonly: true
           lastLoginTimestamp:
-            description: Timestamp of the last login for the user in UTC. Will be null if the user has never logged in.
             type: string
+            description: Timestamp of the last login for the user in UTC. Will be
+              null if the user has never logged in.
             format: date-time
             x-tf-resource-readonly: true
-    ListUserModelsResponse:
-      type: object
+    UpdateUserDefinition:
       required:
-      - data
+      - firstName
+      - isActive
+      - lastName
+      - roleIds
+      type: object
       properties:
-        data:
-          description: List of users.
+        firstName:
+          maxLength: 128
+          minLength: 1
+          type: string
+          description: First name of the user.
+          example: John
+        lastName:
+          maxLength: 128
+          minLength: 0
+          type: string
+          description: Last name of the user.
+          example: Doe
+        isActive:
+          type: boolean
+          description: Is the user active.
+        roleIds:
           type: array
+          description: List of roleIds associated with the user.
           items:
-            $ref: '#/components/schemas/UserModel'
-        next:
-          description: Next continuation token.
-          type: string
-          example: GDCiRv4vebF3UWFJQ1kySXBOR3Bzh69GR0RyWm9vCtc
-    ChangeEmailRequest:
-      type: object
+            type: string
+    Metadata:
       required:
-      - email
+      - createdAt
+      - createdBy
+      - modifiedAt
+      - modifiedBy
+      type: object
       properties:
-        email:
-          description: New email address of the user.
+        createdAt:
           type: string
-          format: email
-          example: 'johndoe@acme.com'
-          maxLength: 255
+          description: Creation timestamp in UTC in [RFC3339](https://tools.ietf.org/html/rfc3339)
+            format.
+          format: date-time
+          x-tf-resource-readonly: true
+        createdBy:
+          type: string
+          description: Identifier of the user who created the resource.
+          x-tf-resource-readonly: true
+        modifiedAt:
+          type: string
+          description: Last modification timestamp in UTC.
+          format: date-time
+          x-tf-resource-readonly: true
+        modifiedBy:
+          type: string
+          description: Identifier of the user who last modified the resource.
+          x-tf-resource-readonly: true
+    ErrorDescription:
+      required:
+      - code
+      - message
+      type: object
+      properties:
+        code:
+          type: string
+          description: An error code describing the type of error.
+          example: auth:password_too_short
+        message:
+          type: string
+          description: A short English-language description of the error.
+          example: Your password was too short.
+        detail:
+          type: string
+          description: An optional fuller English-language description of the error.
+          example: Your password was 5 characters long, the minimum length is 12 characters.  See
+            http://example.com/password for more information.
+        meta:
+          type: object
+          properties: {}
+          description: An optional list of metadata about the error.
+          example:
+            minLength: 12
+            actualLength: 5
+    ErrorResponse:
+      required:
+      - errors
+      - id
+      type: object
+      properties:
+        id:
+          type: string
+          description: An identifier for the error; this is unique to the specific
+            API request.
+          example: IUUQI-DGH5I-TJ045
+        errors:
+          type: array
+          description: A list of one or more causes of the error.
+          example:
+          - code: auth:password_too_short
+            message: Your password was too short.
+          - code: auth:password_character_classes
+            message: Your password did not contain any non-alphanumeric characters
+          items:
+            $ref: '#/components/schemas/ErrorDescription'
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+
