@@ -58,10 +58,10 @@ func (s *Client) Update{{vendorExtensions.x-tf-resourceName}}({{#lambda.camelcas
 {{#models}}
 {{#model}}
 {{#vendorExtensions.x-tf-resource}}
-    {{#lambda.camelcase}}{{classname}}{{/lambda.camelcase}}.ID = ""
+    {{#lambda.camelcase}}{{vendorExtensions.x-tf-object}}{{/lambda.camelcase}}.ID = ""
     {{#vars}}
     {{#vendorExtensions.x-tf-resource-writeonly}}
-    {{#lambda.camelcase}}{{classname}}{{/lambda.camelcase}}.{{nameInCamelCase}} = ""
+      {{#lambda.camelcase}}{{#models}}{{#model}}{{#vendorExtensions.x-tf-resource}}{{vendorExtensions.x-tf-object}}{{/vendorExtensions.x-tf-resource}}{{/model}}{{/models}}{{/lambda.camelcase}}.{{nameInCamelCase}} = ""
     {{/vendorExtensions.x-tf-resource-writeonly}}
     {{/vars}}
 {{/vendorExtensions.x-tf-resource}}

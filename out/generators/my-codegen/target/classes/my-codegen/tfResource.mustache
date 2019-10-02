@@ -92,7 +92,7 @@ func resourceSumologic{{vendorExtensions.x-tf-object}}Update(d *schema.ResourceD
     c := meta.(*Client)
 
     {{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}} := resourceTo{{vendorExtensions.x-tf-object}}(d)
-    err := c.Update{{vendorExtensions.x-tf-object}}(user)
+    err := c.Update{{vendorExtensions.x-tf-object}}({{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}})
 
     if err != nil {
         return err

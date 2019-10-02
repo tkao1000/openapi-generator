@@ -62,7 +62,7 @@ func (s *Client) UpdateUser(user User) error {
     url := fmt.Sprintf("v1/users/%s", user.ID)
 
     user.ID = ""
-    user.Email = ""
+      user.Email = ""
 
     _, err := s.Put(url, user)
     return err

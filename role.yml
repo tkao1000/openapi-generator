@@ -64,6 +64,7 @@ paths:
     post:
       x-tf-create: true
       x-tf-resourceName: Role
+      x-tf-path: v1/roles
       summary: Create a new role.
       description: Create a new role in the organization.
       operationId: createRole
@@ -90,7 +91,7 @@ paths:
     get:
       x-tf-read: true
       x-tf-resourceName: Role
-      x-tf-path: /roles/%s
+      x-tf-path: v1/roles/%s
       summary: Get a role.
       description: Get a role with the given identifier in the organization.
       operationId: getRole
@@ -113,7 +114,7 @@ paths:
     put:
       x-tf-update: true
       x-tf-resourceName: Role
-      x-tf-path: /roles/%s
+      x-tf-path: v1/roles/%s
       summary: Update a role.
       description: >-
         Update an existing role in the organization.
@@ -144,7 +145,7 @@ paths:
     delete:
       x-tf-delete: true
       x-tf-resourceName: Role
-      x-tf-path: /roles/%s
+      x-tf-path: v1/roles/%s
       summary: Delete a role.
       description: Delete a role with the given identifier from the organization.
       operationId: deleteRole

@@ -724,8 +724,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "allVars" : [ {
         "openApiType" : "string",
@@ -784,8 +784,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "requiredVars" : [ {
         "openApiType" : "string",
@@ -844,8 +844,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "optionalVars" : [ ],
       "readOnlyVars" : [ ],
@@ -906,8 +906,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "parentVars" : [ ],
       "mandatory" : [ "email" ],
@@ -1006,8 +1006,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -1067,8 +1067,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "email",
@@ -1129,8 +1129,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -1233,8 +1233,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -1289,8 +1289,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : {
           "x-tfType" : "TypeList"
@@ -1301,8 +1301,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "allVars" : [ {
         "openApiType" : "string",
@@ -1363,8 +1363,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -1424,8 +1424,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "email",
@@ -1486,8 +1486,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -1590,8 +1590,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -1646,8 +1646,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : {
           "x-tfType" : "TypeList"
@@ -1658,8 +1658,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "requiredVars" : [ {
         "openApiType" : "string",
@@ -1720,8 +1720,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -1781,8 +1781,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "email",
@@ -1843,8 +1843,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -1947,8 +1947,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -2003,8 +2003,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : {
           "x-tfType" : "TypeList"
@@ -2015,8 +2015,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "optionalVars" : [ ],
       "readOnlyVars" : [ ],
@@ -2079,8 +2079,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -2140,8 +2140,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "email",
@@ -2202,8 +2202,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -2306,8 +2306,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -2362,8 +2362,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : {
           "x-tfType" : "TypeList"
@@ -2374,8 +2374,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "parentVars" : [ ],
       "mandatory" : [ "email", "firstName", "lastName", "roleIds" ],
@@ -2470,8 +2470,8 @@ Warnings:
         "nameInSnakeCase" : "CODE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "message",
@@ -2527,8 +2527,8 @@ Warnings:
         "nameInSnakeCase" : "MESSAGE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "detail",
@@ -2584,8 +2584,8 @@ Warnings:
         "nameInSnakeCase" : "DETAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "object",
         "baseName" : "meta",
@@ -2641,8 +2641,8 @@ Warnings:
         "nameInSnakeCase" : "META",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "interface{}"
+        "datatype" : "interface{}",
+        "iexclusiveMaximum" : false
       } ],
       "allVars" : [ {
         "openApiType" : "string",
@@ -2699,8 +2699,8 @@ Warnings:
         "nameInSnakeCase" : "CODE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "message",
@@ -2756,8 +2756,8 @@ Warnings:
         "nameInSnakeCase" : "MESSAGE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "detail",
@@ -2813,8 +2813,8 @@ Warnings:
         "nameInSnakeCase" : "DETAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "object",
         "baseName" : "meta",
@@ -2870,8 +2870,8 @@ Warnings:
         "nameInSnakeCase" : "META",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "interface{}"
+        "datatype" : "interface{}",
+        "iexclusiveMaximum" : false
       } ],
       "requiredVars" : [ {
         "openApiType" : "string",
@@ -2928,8 +2928,8 @@ Warnings:
         "nameInSnakeCase" : "CODE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "message",
@@ -2985,8 +2985,8 @@ Warnings:
         "nameInSnakeCase" : "MESSAGE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "optionalVars" : [ {
         "openApiType" : "string",
@@ -3043,8 +3043,8 @@ Warnings:
         "nameInSnakeCase" : "DETAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "object",
         "baseName" : "meta",
@@ -3100,8 +3100,8 @@ Warnings:
         "nameInSnakeCase" : "META",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "interface{}"
+        "datatype" : "interface{}",
+        "iexclusiveMaximum" : false
       } ],
       "readOnlyVars" : [ ],
       "readWriteVars" : [ {
@@ -3159,8 +3159,8 @@ Warnings:
         "nameInSnakeCase" : "CODE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "message",
@@ -3216,8 +3216,8 @@ Warnings:
         "nameInSnakeCase" : "MESSAGE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "detail",
@@ -3273,8 +3273,8 @@ Warnings:
         "nameInSnakeCase" : "DETAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "object",
         "baseName" : "meta",
@@ -3330,8 +3330,8 @@ Warnings:
         "nameInSnakeCase" : "META",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "interface{}"
+        "datatype" : "interface{}",
+        "iexclusiveMaximum" : false
       } ],
       "parentVars" : [ ],
       "mandatory" : [ "code", "message" ],
@@ -3426,8 +3426,8 @@ Warnings:
         "nameInSnakeCase" : "ID",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "errors",
@@ -3532,8 +3532,8 @@ Warnings:
           "nameInSnakeCase" : "ERRORS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "ErrorDescription"
+          "datatype" : "ErrorDescription",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "ErrorDescription",
@@ -3589,8 +3589,8 @@ Warnings:
           "nameInSnakeCase" : "ERRORS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "ErrorDescription"
+          "datatype" : "ErrorDescription",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -3599,8 +3599,8 @@ Warnings:
         "nameInSnakeCase" : "ERRORS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "allVars" : [ {
         "openApiType" : "string",
@@ -3657,8 +3657,8 @@ Warnings:
         "nameInSnakeCase" : "ID",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "errors",
@@ -3763,8 +3763,8 @@ Warnings:
           "nameInSnakeCase" : "ERRORS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "ErrorDescription"
+          "datatype" : "ErrorDescription",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "ErrorDescription",
@@ -3820,8 +3820,8 @@ Warnings:
           "nameInSnakeCase" : "ERRORS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "ErrorDescription"
+          "datatype" : "ErrorDescription",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -3830,8 +3830,8 @@ Warnings:
         "nameInSnakeCase" : "ERRORS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "requiredVars" : [ {
         "openApiType" : "string",
@@ -3888,8 +3888,8 @@ Warnings:
         "nameInSnakeCase" : "ID",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "errors",
@@ -3994,8 +3994,8 @@ Warnings:
           "nameInSnakeCase" : "ERRORS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "ErrorDescription"
+          "datatype" : "ErrorDescription",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "ErrorDescription",
@@ -4051,8 +4051,8 @@ Warnings:
           "nameInSnakeCase" : "ERRORS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "ErrorDescription"
+          "datatype" : "ErrorDescription",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -4061,8 +4061,8 @@ Warnings:
         "nameInSnakeCase" : "ERRORS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "optionalVars" : [ ],
       "readOnlyVars" : [ ],
@@ -4121,8 +4121,8 @@ Warnings:
         "nameInSnakeCase" : "ID",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "errors",
@@ -4227,8 +4227,8 @@ Warnings:
           "nameInSnakeCase" : "ERRORS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "ErrorDescription"
+          "datatype" : "ErrorDescription",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "ErrorDescription",
@@ -4284,8 +4284,8 @@ Warnings:
           "nameInSnakeCase" : "ERRORS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "ErrorDescription"
+          "datatype" : "ErrorDescription",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -4294,8 +4294,8 @@ Warnings:
         "nameInSnakeCase" : "ERRORS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "parentVars" : [ ],
       "mandatory" : [ "errors", "id" ],
@@ -4439,8 +4439,8 @@ Warnings:
           "nameInSnakeCase" : "DATA",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "UserModel"
+          "datatype" : "UserModel",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "UserModel",
@@ -4496,8 +4496,8 @@ Warnings:
           "nameInSnakeCase" : "DATA",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "UserModel"
+          "datatype" : "UserModel",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -4506,8 +4506,8 @@ Warnings:
         "nameInSnakeCase" : "DATA",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "next",
@@ -4563,8 +4563,8 @@ Warnings:
         "nameInSnakeCase" : "NEXT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "allVars" : [ {
         "openApiType" : "array",
@@ -4670,8 +4670,8 @@ Warnings:
           "nameInSnakeCase" : "DATA",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "UserModel"
+          "datatype" : "UserModel",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "UserModel",
@@ -4727,8 +4727,8 @@ Warnings:
           "nameInSnakeCase" : "DATA",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "UserModel"
+          "datatype" : "UserModel",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -4737,8 +4737,8 @@ Warnings:
         "nameInSnakeCase" : "DATA",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "next",
@@ -4794,8 +4794,8 @@ Warnings:
         "nameInSnakeCase" : "NEXT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "requiredVars" : [ {
         "openApiType" : "array",
@@ -4901,8 +4901,8 @@ Warnings:
           "nameInSnakeCase" : "DATA",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "UserModel"
+          "datatype" : "UserModel",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "UserModel",
@@ -4958,8 +4958,8 @@ Warnings:
           "nameInSnakeCase" : "DATA",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "UserModel"
+          "datatype" : "UserModel",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -4968,8 +4968,8 @@ Warnings:
         "nameInSnakeCase" : "DATA",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "optionalVars" : [ {
         "openApiType" : "string",
@@ -5026,8 +5026,8 @@ Warnings:
         "nameInSnakeCase" : "NEXT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "readOnlyVars" : [ ],
       "readWriteVars" : [ {
@@ -5134,8 +5134,8 @@ Warnings:
           "nameInSnakeCase" : "DATA",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "UserModel"
+          "datatype" : "UserModel",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "UserModel",
@@ -5191,8 +5191,8 @@ Warnings:
           "nameInSnakeCase" : "DATA",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "UserModel"
+          "datatype" : "UserModel",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -5201,8 +5201,8 @@ Warnings:
         "nameInSnakeCase" : "DATA",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "next",
@@ -5258,8 +5258,8 @@ Warnings:
         "nameInSnakeCase" : "NEXT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "parentVars" : [ ],
       "mandatory" : [ "data" ],
@@ -5358,8 +5358,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdBy",
@@ -5417,8 +5417,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedAt",
@@ -5478,8 +5478,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedBy",
@@ -5537,8 +5537,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "allVars" : [ {
         "openApiType" : "string",
@@ -5599,8 +5599,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdBy",
@@ -5658,8 +5658,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedAt",
@@ -5719,8 +5719,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedBy",
@@ -5778,8 +5778,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "requiredVars" : [ {
         "openApiType" : "string",
@@ -5840,8 +5840,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdBy",
@@ -5899,8 +5899,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedAt",
@@ -5960,8 +5960,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedBy",
@@ -6019,8 +6019,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "optionalVars" : [ ],
       "readOnlyVars" : [ ],
@@ -6083,8 +6083,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdBy",
@@ -6142,8 +6142,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedAt",
@@ -6203,8 +6203,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedBy",
@@ -6262,8 +6262,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "parentVars" : [ ],
       "mandatory" : [ "createdAt", "createdBy", "modifiedAt", "modifiedBy" ],
@@ -6360,8 +6360,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -6419,8 +6419,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isActive",
@@ -6477,8 +6477,8 @@ Warnings:
         "nameInSnakeCase" : "IS_ACTIVE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -6581,8 +6581,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -6637,8 +6637,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -6647,8 +6647,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "allVars" : [ {
         "openApiType" : "string",
@@ -6707,8 +6707,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -6766,8 +6766,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isActive",
@@ -6824,8 +6824,8 @@ Warnings:
         "nameInSnakeCase" : "IS_ACTIVE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -6928,8 +6928,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -6984,8 +6984,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -6994,8 +6994,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "requiredVars" : [ {
         "openApiType" : "string",
@@ -7054,8 +7054,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -7113,8 +7113,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isActive",
@@ -7171,8 +7171,8 @@ Warnings:
         "nameInSnakeCase" : "IS_ACTIVE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -7275,8 +7275,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -7331,8 +7331,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -7341,8 +7341,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "optionalVars" : [ ],
       "readOnlyVars" : [ ],
@@ -7403,8 +7403,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -7462,8 +7462,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isActive",
@@ -7520,8 +7520,8 @@ Warnings:
         "nameInSnakeCase" : "IS_ACTIVE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -7624,8 +7624,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -7680,8 +7680,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : { },
         "hasValidation" : false,
@@ -7690,8 +7690,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       } ],
       "parentVars" : [ ],
       "mandatory" : [ "firstName", "isActive", "lastName", "roleIds" ],
@@ -7790,8 +7790,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -7851,8 +7851,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "email",
@@ -7913,8 +7913,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -8017,8 +8017,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -8073,8 +8073,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : {
           "x-tfType" : "TypeList"
@@ -8085,8 +8085,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdAt",
@@ -8146,8 +8146,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdBy",
@@ -8205,8 +8205,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedAt",
@@ -8266,8 +8266,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedBy",
@@ -8325,8 +8325,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "id",
@@ -8384,8 +8384,8 @@ Warnings:
         "nameInSnakeCase" : "ID",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isActive",
@@ -8444,8 +8444,8 @@ Warnings:
         "nameInSnakeCase" : "IS_ACTIVE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isLocked",
@@ -8504,8 +8504,8 @@ Warnings:
         "nameInSnakeCase" : "IS_LOCKED",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isMfaEnabled",
@@ -8564,8 +8564,8 @@ Warnings:
         "nameInSnakeCase" : "IS_MFA_ENABLED",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastLoginTimestamp",
@@ -8625,8 +8625,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_LOGIN_TIMESTAMP",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       } ],
       "allVars" : [ {
         "openApiType" : "string",
@@ -8687,8 +8687,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -8748,8 +8748,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "email",
@@ -8810,8 +8810,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -8914,8 +8914,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -8970,8 +8970,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : {
           "x-tfType" : "TypeList"
@@ -8982,8 +8982,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdAt",
@@ -9043,8 +9043,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdBy",
@@ -9102,8 +9102,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedAt",
@@ -9163,8 +9163,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedBy",
@@ -9222,8 +9222,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "id",
@@ -9281,8 +9281,8 @@ Warnings:
         "nameInSnakeCase" : "ID",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isActive",
@@ -9341,8 +9341,8 @@ Warnings:
         "nameInSnakeCase" : "IS_ACTIVE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isLocked",
@@ -9401,8 +9401,8 @@ Warnings:
         "nameInSnakeCase" : "IS_LOCKED",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isMfaEnabled",
@@ -9461,8 +9461,8 @@ Warnings:
         "nameInSnakeCase" : "IS_MFA_ENABLED",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastLoginTimestamp",
@@ -9522,8 +9522,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_LOGIN_TIMESTAMP",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       } ],
       "requiredVars" : [ {
         "openApiType" : "string",
@@ -9584,8 +9584,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -9645,8 +9645,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "email",
@@ -9707,8 +9707,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -9811,8 +9811,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -9867,8 +9867,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : {
           "x-tfType" : "TypeList"
@@ -9879,8 +9879,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdAt",
@@ -9940,8 +9940,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdBy",
@@ -9999,8 +9999,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedAt",
@@ -10060,8 +10060,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedBy",
@@ -10119,8 +10119,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "id",
@@ -10178,8 +10178,8 @@ Warnings:
         "nameInSnakeCase" : "ID",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       } ],
       "optionalVars" : [ {
         "openApiType" : "boolean",
@@ -10239,8 +10239,8 @@ Warnings:
         "nameInSnakeCase" : "IS_ACTIVE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isLocked",
@@ -10299,8 +10299,8 @@ Warnings:
         "nameInSnakeCase" : "IS_LOCKED",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isMfaEnabled",
@@ -10359,8 +10359,8 @@ Warnings:
         "nameInSnakeCase" : "IS_MFA_ENABLED",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastLoginTimestamp",
@@ -10420,8 +10420,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_LOGIN_TIMESTAMP",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       } ],
       "readOnlyVars" : [ ],
       "readWriteVars" : [ {
@@ -10483,8 +10483,8 @@ Warnings:
         "nameInSnakeCase" : "FIRST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastName",
@@ -10544,8 +10544,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_NAME",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "email",
@@ -10606,8 +10606,8 @@ Warnings:
         "nameInSnakeCase" : "EMAIL",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "array",
         "baseName" : "roleIds",
@@ -10710,8 +10710,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "mostInnerItems" : {
           "openApiType" : "string",
@@ -10766,8 +10766,8 @@ Warnings:
           "nameInSnakeCase" : "ROLE_IDS",
           "isXmlAttribute" : false,
           "isXmlWrapped" : false,
-          "iexclusiveMaximum" : false,
-          "datatype" : "string"
+          "datatype" : "string",
+          "iexclusiveMaximum" : false
         },
         "vendorExtensions" : {
           "x-tfType" : "TypeList"
@@ -10778,8 +10778,8 @@ Warnings:
         "nameInSnakeCase" : "ROLE_IDS",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "[]"
+        "datatype" : "[]",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdAt",
@@ -10839,8 +10839,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "createdBy",
@@ -10898,8 +10898,8 @@ Warnings:
         "nameInSnakeCase" : "CREATED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedAt",
@@ -10959,8 +10959,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_AT",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "modifiedBy",
@@ -11018,8 +11018,8 @@ Warnings:
         "nameInSnakeCase" : "MODIFIED_BY",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "id",
@@ -11077,8 +11077,8 @@ Warnings:
         "nameInSnakeCase" : "ID",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "string"
+        "datatype" : "string",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isActive",
@@ -11137,8 +11137,8 @@ Warnings:
         "nameInSnakeCase" : "IS_ACTIVE",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isLocked",
@@ -11197,8 +11197,8 @@ Warnings:
         "nameInSnakeCase" : "IS_LOCKED",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "boolean",
         "baseName" : "isMfaEnabled",
@@ -11257,8 +11257,8 @@ Warnings:
         "nameInSnakeCase" : "IS_MFA_ENABLED",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "bool"
+        "datatype" : "bool",
+        "iexclusiveMaximum" : false
       }, {
         "openApiType" : "string",
         "baseName" : "lastLoginTimestamp",
@@ -11318,8 +11318,8 @@ Warnings:
         "nameInSnakeCase" : "LAST_LOGIN_TIMESTAMP",
         "isXmlAttribute" : false,
         "isXmlWrapped" : false,
-        "iexclusiveMaximum" : false,
-        "datatype" : "time.Time"
+        "datatype" : "time.Time",
+        "iexclusiveMaximum" : false
       } ],
       "parentVars" : [ ],
       "mandatory" : [ "createdAt", "createdBy", "email", "firstName", "id", "lastName", "modifiedAt", "modifiedBy", "roleIds" ],
@@ -11714,18 +11714,18 @@ Warnings:
           "operationIdCamelCase" : "CreateUser",
           "operationIdSnakeCase" : "create_user",
           "hasQueryParams" : false,
+          "hasExamples" : true,
           "restfulShow" : false,
           "restfulIndex" : false,
           "restfulCreate" : false,
           "restfulUpdate" : false,
           "restfulDestroy" : false,
           "restful" : false,
-          "hasExamples" : true,
           "hasBodyParam" : true,
           "hasFormParams" : false,
           "hasPathParams" : false,
-          "hasHeaderParams" : false,
           "hasCookieParams" : false,
+          "hasHeaderParams" : false,
           "hasResponseHeaders" : false,
           "bodyAllowed" : true
         }, {
@@ -12147,18 +12147,18 @@ Warnings:
           "operationIdCamelCase" : "DeleteUser",
           "operationIdSnakeCase" : "delete_user",
           "hasQueryParams" : true,
+          "hasExamples" : false,
           "restfulShow" : false,
           "restfulIndex" : false,
           "restfulCreate" : false,
           "restfulUpdate" : false,
           "restfulDestroy" : false,
           "restful" : false,
-          "hasExamples" : false,
           "hasBodyParam" : false,
           "hasFormParams" : false,
           "hasPathParams" : true,
-          "hasHeaderParams" : false,
           "hasCookieParams" : false,
+          "hasHeaderParams" : false,
           "hasResponseHeaders" : false,
           "bodyAllowed" : false
         }, {
@@ -12448,18 +12448,18 @@ Warnings:
           "operationIdCamelCase" : "GetUser",
           "operationIdSnakeCase" : "get_user",
           "hasQueryParams" : false,
+          "hasExamples" : true,
           "restfulShow" : false,
           "restfulIndex" : false,
           "restfulCreate" : false,
           "restfulUpdate" : false,
           "restfulDestroy" : false,
           "restful" : false,
-          "hasExamples" : true,
           "hasBodyParam" : false,
           "hasFormParams" : false,
           "hasPathParams" : true,
-          "hasHeaderParams" : false,
           "hasCookieParams" : false,
+          "hasHeaderParams" : false,
           "hasResponseHeaders" : false,
           "bodyAllowed" : false
         }, {
@@ -13190,18 +13190,18 @@ Warnings:
           "operationIdCamelCase" : "ListUsers",
           "operationIdSnakeCase" : "list_users",
           "hasQueryParams" : true,
+          "hasExamples" : true,
           "restfulShow" : false,
           "restfulIndex" : false,
           "restfulCreate" : false,
           "restfulUpdate" : false,
           "restfulDestroy" : false,
           "restful" : false,
-          "hasExamples" : true,
           "hasBodyParam" : false,
           "hasFormParams" : false,
           "hasPathParams" : false,
-          "hasHeaderParams" : false,
           "hasCookieParams" : false,
+          "hasHeaderParams" : false,
           "hasResponseHeaders" : false,
           "bodyAllowed" : false
         }, {
@@ -13679,18 +13679,18 @@ Warnings:
           "operationIdCamelCase" : "UpdateUser",
           "operationIdSnakeCase" : "update_user",
           "hasQueryParams" : false,
+          "hasExamples" : true,
           "restfulShow" : false,
           "restfulIndex" : false,
           "restfulCreate" : false,
           "restfulUpdate" : false,
           "restfulDestroy" : false,
           "restful" : false,
-          "hasExamples" : true,
           "hasBodyParam" : true,
           "hasFormParams" : false,
           "hasPathParams" : true,
-          "hasHeaderParams" : false,
           "hasCookieParams" : false,
+          "hasHeaderParams" : false,
           "hasResponseHeaders" : false,
           "bodyAllowed" : true
         } ],
@@ -13732,7 +13732,7 @@ Warnings:
       "basePath" : "http://localhost",
       "classname" : "UserManagementApi",
       "gitRepoId" : "GIT_REPO_ID",
-      "generatedDate" : "2019-10-02T10:15:51.384-07:00[America/Los_Angeles]",
+      "generatedDate" : "2019-10-02T10:27:46.424-07:00[America/Los_Angeles]",
       "appDescriptionWithNewLines" : "Welcome to the API reference.",
       "gitUserId" : "GIT_USER_ID"
     } ]
@@ -13741,7 +13741,7 @@ Warnings:
   "hasServers" : true,
   "basePath" : "http://localhost",
   "gitRepoId" : "GIT_REPO_ID",
-  "generatedDate" : "2019-10-02T10:15:51.384-07:00[America/Los_Angeles]",
+  "generatedDate" : "2019-10-02T10:27:46.424-07:00[America/Los_Angeles]",
   "appDescriptionWithNewLines" : "Welcome to the API reference.",
   "gitUserId" : "GIT_USER_ID"
 }

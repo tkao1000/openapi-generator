@@ -5,15 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client.go" beforeDir="false" afterPath="$PROJECT_DIR$/client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/help.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/out/my-codegen/resource.go" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/out/my-codegen/resource.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfClient.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfClient.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/my-codegen-openapi-generator-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/my-codegen-openapi-generator-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/surefire-reports/TEST-com.tkao.codegen.MyCodegenGeneratorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/surefire-reports/TEST-com.tkao.codegen.MyCodegenGeneratorTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/generators/my-codegen/target/surefire-reports/com.tkao.codegen.MyCodegenGeneratorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/generators/my-codegen/target/surefire-reports/com.tkao.codegen.MyCodegenGeneratorTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource.go" beforeDir="false" afterPath="$PROJECT_DIR$/resource.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/role.yml" beforeDir="false" afterPath="$PROJECT_DIR$/role.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/modules/openapi-generator-online/target/" />
@@ -67,16 +65,16 @@
         <counts>
           <entry key="go" value="1" />
           <entry key="java" value="580" />
-          <entry key="mustache" value="5721" />
+          <entry key="mustache" value="5749" />
           <entry key="xml" value="42" />
-          <entry key="yml" value="1057" />
+          <entry key="yml" value="1083" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Handlebars/Mustache" value="5721" />
+          <entry key="Handlebars/Mustache" value="5749" />
           <entry key="JAVA" value="580" />
-          <entry key="PLAIN_TEXT" value="163" />
+          <entry key="PLAIN_TEXT" value="189" />
           <entry key="XML" value="42" />
           <entry key="YAML" value="895" />
         </counts>
@@ -88,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+            <state relative-caret-position="300">
+              <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -97,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="70" column="9" lean-forward="true" selection-end-line="84" />
+            <state relative-caret-position="121">
+              <caret line="47" column="20" lean-forward="true" selection-end-line="84" />
             </state>
           </provider>
         </entry>
@@ -115,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/role.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="282" column="35" selection-start-line="282" selection-start-column="35" selection-end-line="282" selection-end-column="35" />
+            <state relative-caret-position="5">
+              <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -124,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="193" column="48" selection-end-line="215" selection-end-column="11" />
+            <state relative-caret-position="257">
+              <caret line="189" column="36" selection-start-line="189" selection-start-column="36" selection-end-line="189" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -133,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1473">
-              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+            <state relative-caret-position="220">
+              <caret line="61" column="208" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="208" />
             </state>
           </provider>
         </entry>
@@ -142,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resource.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
+            <state relative-caret-position="271">
+              <caret line="109" column="26" lean-forward="true" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -159,7 +157,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>role</find>
       <find>tfResource</find>
       <find>lower</find>
       <find>petstore</find>
@@ -184,10 +181,11 @@
       <find>camelcase</find>
       <find>user</find>
       <find>UserUpdate</find>
-      <find>classname</find>
-      <find>name</find>
       <find>readonly</find>
       <find>x-tf</find>
+      <find>name</find>
+      <find>classname</find>
+      <find>models</find>
       <find>path</find>
     </findStrings>
     <replaceStrings>
@@ -234,10 +232,10 @@
         <option value="$PROJECT_DIR$/generic-models.yml" />
         <option value="$PROJECT_DIR$/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java" />
         <option value="$PROJECT_DIR$/resourceTest.go" />
-        <option value="$PROJECT_DIR$/role.yml" />
         <option value="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache" />
-        <option value="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache" />
         <option value="$PROJECT_DIR$/user.yml" />
+        <option value="$PROJECT_DIR$/role.yml" />
+        <option value="$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache" />
         <option value="$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache" />
       </list>
     </option>
@@ -494,7 +492,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="client.g&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;resource&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/resource.go&#10;client.&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;default&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java&#10;resource.go&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/resourceTest.go&#10;client.go&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;tfResource&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache&#10;defaul&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java&#10;lambda&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/modules/openapi-generator/src/main/java/org/openapitools/codegen/templating/mustache/JoinWithCommaLambda.java&#10;tfre&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache&#10;myc&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/java/com/tkao/codegen/MyCodegenGenerator.java&#10;client&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/client.go&#10;swaggercodegen&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/docs/migration-from-swagger-codegen.md&#10;tf&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache&#10;mycodegengenerator&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/test/java/com/tkao/codegen/MyCodegenGeneratorTest.java&#10;tfresource&#9;FILE&#9;file:///Users/tkao/git/openapi-generator/out/generators/my-codegen/src/main/resources/my-codegen/tfResource.mustache" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570036536122" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570037256935" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -821,34 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/role.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="282" column="35" selection-start-line="282" selection-start-column="35" selection-end-line="282" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="193" column="48" selection-end-line="215" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resource.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="120" column="36" selection-start-line="120" selection-start-column="36" selection-end-line="120" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1473">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -856,17 +826,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/role.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="147" column="19" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfResourceTest.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="189" column="36" selection-start-line="189" selection-start-column="36" selection-end-line="189" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/target/classes/my-codegen/tfResource.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="61" column="208" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="208" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/out/generators/my-codegen/src/main/resources/my-codegen/tfClient.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+        <state relative-caret-position="300">
+          <caret line="60" column="55" selection-start-line="60" selection-start-column="55" selection-end-line="60" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resource.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="109" column="26" lean-forward="true" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="9" lean-forward="true" selection-end-line="84" />
+        <state relative-caret-position="121">
+          <caret line="47" column="20" lean-forward="true" selection-end-line="84" />
         </state>
       </provider>
     </entry>
