@@ -3,7 +3,7 @@ package sumologic
 import (
 	"fmt"
 	"testing"
-	"os"
+  "strconv"
 
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
@@ -15,7 +15,7 @@ func TestAccUserCreate(t *testing.T) {
         testfirstName := acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)
         testlastName := acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)
         testemail := acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)
-        testroleIds := [1]string{acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)}
+        testroleIds := []string{acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)}
         testisActive := true
         resource.Test(t, resource.TestCase{
                 PreCheck: func() { TestAccPreCheck(t) },
@@ -30,8 +30,8 @@ func TestAccUserCreate(t *testing.T) {
                                         resource.TestCheckResourceAttr("sumologic_user.test", "first_name", testfirstName),
                                         resource.TestCheckResourceAttr("sumologic_user.test", "last_name", testlastName),
                                         resource.TestCheckResourceAttr("sumologic_user.test", "email", testemail),
-                                        resource.TestCheckResourceAttr("sumologic_user.test", "role_ids", testroleIds),
-                                        resource.TestCheckResourceAttr("sumologic_user.test", "is_active", testisActive),
+                                        resource.TestCheckResourceAttr("sumologic_user.test", "role_ids.#", testroleIds[0]),
+                                        resource.TestCheckResourceAttr("sumologic_user.test", "is_active", strconv.FormatBool(testisActive)),
                                 ),
                         },
                 },
@@ -90,13 +90,13 @@ func TestAccUserUpdate(t *testing.T) {
           testfirstName := acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)
           testlastName := acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)
           testemail := acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)
-          testroleIds := [1]string{acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)}
+          testroleIds := []string{acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)}
           testisActive := true
 
           testUpdatedfirstName := acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)
           testUpdatedlastName := acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)
           testUpdatedemail := acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)
-          testUpdatedroleIds := [1]string{acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)}
+          testUpdatedroleIds := []string{acctest.RandStringFromCharSet(10, acctest.CharSetAlphaNum)}
           testUpdatedisActive := false
 
 	resource.Test(t, resource.TestCase{
@@ -105,15 +105,15 @@ func TestAccUserUpdate(t *testing.T) {
 		CheckDestroy: testAccCheckUserDestroy(user),
 		Steps: []resource.TestStep{
 			{
-				Config: testAccSumologic(testfirstName, testlastName, testemail, testroleIds, testisActive),
+				Config: testAccSumologicUser(testfirstName, testlastName, testemail, testroleIds, testisActive),
 				Check: resource.ComposeTestCheckFunc(
 					testAccCheckUserExists("sumologic_user.test", &user, t),
 					testAccCheckUserAttributes("sumologic_user.test"),
           resource.TestCheckResourceAttr("sumologic_user.test", "first_name", testfirstName),
           resource.TestCheckResourceAttr("sumologic_user.test", "last_name", testlastName),
           resource.TestCheckResourceAttr("sumologic_user.test", "email", testemail),
-          resource.TestCheckResourceAttr("sumologic_user.test", "role_ids", testroleIds),
-          resource.TestCheckResourceAttr("sumologic_user.test", "is_active", testisActive),
+          resource.TestCheckResourceAttr("sumologic_user.test", "role_ids.#", testroleIds[0]),
+          resource.TestCheckResourceAttr("sumologic_user.test", "is_active", strconv.FormatBool(testisActive)),
 				),
 			},
 			{
@@ -124,8 +124,8 @@ func TestAccUserUpdate(t *testing.T) {
           resource.TestCheckResourceAttr("sumologic_user.test", "first_name", testUpdatedfirstName),
           resource.TestCheckResourceAttr("sumologic_user.test", "last_name", testUpdatedlastName),
           resource.TestCheckResourceAttr("sumologic_user.test", "email", testUpdatedemail),
-          resource.TestCheckResourceAttr("sumologic_user.test", "role_ids", testUpdatedroleIds),
-          resource.TestCheckResourceAttr("sumologic_user.test", "is_active", testUpdatedisActive),
+          resource.TestCheckResourceAttr("sumologic_user.test", "role_ids.#", testUpdatedroleIds[0]),
+          resource.TestCheckResourceAttr("sumologic_user.test", "is_active", strconv.FormatBool(testUpdatedisActive)),
 				),
 			},
 		},
