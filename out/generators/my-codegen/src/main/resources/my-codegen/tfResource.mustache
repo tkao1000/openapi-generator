@@ -133,6 +133,7 @@ func resourceTo{{name}}(d *schema.ResourceData) {{name}} {
 
 
   return {{name}}{
+    ID: d.Id(),
     {{#vars}}
       {{^vendorExtensions.x-tf-resource-readonly}}
       {{nameInCamelCase}}: {{^isListContainer}}d.Get("{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}").({{dataType}}){{/isListContainer}}{{#isListContainer}}{{name}}{{/isListContainer}},
