@@ -31,7 +31,7 @@ func resourceSumologic{{vendorExtensions.x-tf-object}}() *schema.Resource {
                 ForceNew: false,{{#defaultValue}}{{#lambda.indented_16}}{{#lambda.default}}Default: {{defaultValue}}{{/lambda.default}}{{/lambda.indented_16}}{{/defaultValue}}
                 {{#isListContainer}}
                  Elem: &schema.Schema{
-                    Type: schema.Type{{#lambda.titlecase}}{{items.dataType}}{{/lambda.titlecase}},
+                    Type: schema.Type{{#lambda.titlecase}}{{{items.dataType}}}{{/lambda.titlecase}},
                  },
                 {{/isListContainer}}
             },
@@ -59,7 +59,7 @@ func resourceSumologic{{vendorExtensions.x-tf-object}}Read(d *schema.ResourceDat
 
     {{#vars}}
       {{^vendorExtensions.x-tf-resource-readonly}}
-    d.Set("{{name}}", {{#lambda.lowercase}}{{#models}}{{#model}}{{#vendorExtensions.x-tf-resource}}{{vendorExtensions.x-tf-object}}{{/vendorExtensions.x-tf-resource}}{{/model}}{{/models}}{{/lambda.lowercase}}.{{nameInCamelCase}})
+        d.Set("{{name}}", {{#lambda.lowercase}}{{#apiInfo}}{{#apis}}{{#operations}}{{#operation}}{{#vendorExtensions.x-tf-create}}{{vendorExtensions.x-tf-resourceName}}{{/vendorExtensions.x-tf-create}}{{/operation}}{{/operations}}{{/apis}}{{/apiInfo}}{{/lambda.lowercase}}.{{nameInCamelCase}})
     {{/vendorExtensions.x-tf-resource-readonly}}
     {{/vars}}
 
@@ -101,15 +101,15 @@ func resourceSumologic{{vendorExtensions.x-tf-object}}Update(d *schema.ResourceD
     return resourceSumologic{{vendorExtensions.x-tf-object}}Read(d, meta)
 }
 
-func resourceSumologic{{vendorExtensions.x-tf-object}}Exists(d *schema.ResourceData, meta interface{}) (bool, error) {
+func resourceSumologic{{vendorExtensions.x-tf-object}}Exists(d *schema.ResourceData, meta interface{}) error {
     c := meta.(*Client)
 
-    {{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}}, err := c.Get{{vendorExtensions.x-tf-object}}(d.Id())
+    _, err := c.Get{{vendorExtensions.x-tf-object}}(d.Id())
     if err != nil {
-        return false, err
+        return err
     }
 
-    return {{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}} != nil, nil
+    return nil
 }
 
 func resourceTo{{vendorExtensions.x-tf-object}}(d *schema.ResourceData) {{vendorExtensions.x-tf-object}} {
@@ -132,7 +132,7 @@ func resourceTo{{vendorExtensions.x-tf-object}}(d *schema.ResourceData) {{vendor
 
 
   return {{vendorExtensions.x-tf-object}}{
-      ID: d.Id(),
+    ID: d.Id(),
     {{#vars}}
       {{^vendorExtensions.x-tf-resource-readonly}}
       {{nameInCamelCase}}: {{^isListContainer}}d.Get("{{#lambda.lowercase}}{{nameInSnakeCase}}{{/lambda.lowercase}}").({{dataType}}){{/isListContainer}}{{#isListContainer}}{{name}}{{/isListContainer}},
