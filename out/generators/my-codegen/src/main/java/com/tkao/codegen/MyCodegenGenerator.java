@@ -143,6 +143,11 @@ public class MyCodegenGenerator extends DefaultCodegen implements CodegenConfig 
         "client.go")                                          // the output file
     );
 
+    supportingFiles.add(new SupportingFile("tfResourceImportTest.mustache",   // the input template or file
+        "",                                                       // the destination folder, relative `outputFolder`
+        "importResourceTest.go")                                          // the output file
+    );
+
 
     /**
      * Language Specific Primitives.  These types will not trigger imports by

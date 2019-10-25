@@ -228,7 +228,8 @@ public class DefaultCodegen implements CodegenConfig {
                 .put("indented_8", new IndentedLambda(8, " "))
                 .put("indented_12", new IndentedLambda(12, " "))
                 .put("indented_16", new IndentedLambda(16, " "))
-                .put("joinWithComma", new JoinWithCommaLambda().generator(this));
+                .put("joinWithComma", new JoinWithCommaLambda().generator(this))
+                .put("snakecase", new CaseFormatLambda(CaseFormat.UPPER_CAMEL, CaseFormat.LOWER_UNDERSCORE));
     }
 
     private void registerMustacheLambdas() {
