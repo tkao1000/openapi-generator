@@ -15,7 +15,7 @@ import (
   "fmt"
   "strconv"
   "testing"
-  "github.com/hashicorp/terraform/helper/resource"
+  "github.com/hashicorp/terraform-plugin-sdk/helper/resource"
 )
 
 {{#models}}
@@ -33,7 +33,7 @@ func TestSumologic{{vendorExtensions.x-tf-object}}_import(t *testing.T) {
 
 
   resource.Test(t, resource.TestCase{
-    PreCheck:     func() { TestAccPreCheck(t) },
+    PreCheck:     func() { testAccPreCheck(t) },
     Providers:    testAccProviders,
     CheckDestroy: testAccCheck{{vendorExtensions.x-tf-object}}Destroy({{#lambda.lowercase}}{{vendorExtensions.x-tf-object}}{{/lambda.lowercase}}),
     Steps: []resource.TestStep{

@@ -16,8 +16,8 @@ import (
 	"testing"
   "strconv"
   "strings"
-	"github.com/hashicorp/terraform/helper/resource"
-	"github.com/hashicorp/terraform/terraform"
+	"github.com/hashicorp/terraform-plugin-sdk/helper/resource"
+	"github.com/hashicorp/terraform-plugin-sdk/terraform"
 )
 
 {{#apiInfo}}
@@ -41,7 +41,7 @@ func TestAcc{{vendorExtensions.x-tf-resourceName}}Create(t *testing.T) {
           {{/model}}
         {{/models}}
         resource.Test(t, resource.TestCase{
-                PreCheck: func() { TestAccPreCheck(t) },
+                PreCheck: func() { testAccPreCheck(t) },
                 Providers:    testAccProviders,
                 CheckDestroy: testAccCheck{{vendorExtensions.x-tf-resourceName}}Destroy({{#lambda.lowercase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.lowercase}}),
                 Steps: []resource.TestStep{
@@ -102,7 +102,7 @@ func TestAcc{{vendorExtensions.x-tf-resourceName}}Update(t *testing.T) {
 {{/models}}
 
 	resource.Test(t, resource.TestCase{
-		PreCheck: func() { TestAccPreCheck(t) },
+		PreCheck: func() { testAccPreCheck(t) },
 		Providers:    testAccProviders,
 		CheckDestroy: testAccCheck{{vendorExtensions.x-tf-resourceName}}Destroy({{#lambda.lowercase}}{{vendorExtensions.x-tf-resourceName}}{{/lambda.lowercase}}),
 		Steps: []resource.TestStep{

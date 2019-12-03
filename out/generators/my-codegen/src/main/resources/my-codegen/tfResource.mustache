@@ -14,7 +14,7 @@ package sumologic
 import (
     "log"
 
-    "github.com/hashicorp/terraform/helper/schema"
+    "github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 
 
@@ -36,7 +36,7 @@ func resourceSumologic{{vendorExtensions.x-tf-object}}() *schema.Resource {
         {{^vendorExtensions.x-tf-resource-readonly}}
           {{^vendorExtensions.x-tf-hideFromTfFile}}
             {{#lambda.lowercase}}"{{nameInSnakeCase}}"{{/lambda.lowercase}}: {
-                Type: schema.{{vendorExtensions.x-tfType}},
+                Type: YamlToTerraformTypeMap["{{baseType}}"],
                 {{#required}}
                 Required: true,
                 {{/required}}
@@ -46,7 +46,7 @@ func resourceSumologic{{vendorExtensions.x-tf-object}}() *schema.Resource {
                 ForceNew: false,{{^required}}{{#defaultValue}}{{#lambda.indented_16}}{{#lambda.default}}Default: {{defaultValue}},{{/lambda.default}}{{/lambda.indented_16}}{{/defaultValue}}{{/required}}
                 {{#isListContainer}}
                  Elem: &schema.Schema{
-                    Type: schema.Type{{#lambda.titlecase}}{{{items.dataType}}}{{/lambda.titlecase}},
+                    Type: YamlToTerraformTypeMap["{{items.baseType}}"],
                  },
                 {{/isListContainer}}
             },
